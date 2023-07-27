@@ -1,4 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+h1,h2{
+    color: aqua;
+    font-family: 'Borel', cursive;
+}
 body{
     color:white;
-    background: #000;
+    background:#0a192f;
 }
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    
+}
+.navbar title{
+    width: 100vw;
+}
+
+.navbar ul{
+    padding-right: 100px;
+    list-style: none;
+    display: inline-flex;
+    gap:20px;
+}
+ nav a{
+    color: aliceblue;
+    text-decoration: none;    
+}
+ nav a:hover{
+    color: aqua;
+}
+.first{
+  margin: 150px 20px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.profile-pic img{
+    height: 300px;
+    width: 300px;
+    border: 2px solid aqua;
+    border-radius: 50%;
+}
+.summery{
+    width: 600px;
+    justify-content: center;
+}
+.summery h2{
+    color: aqua;
+    font-size:40px;
+    padding-bottom: 0px;
+
+}
+.summery p{
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+text-align: justify;
+}
+
+
+footer{
+    padding-top: 200px; ;
+text-align: center;}
