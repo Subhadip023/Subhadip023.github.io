@@ -45,7 +45,9 @@ nav{
  color:  rgb(27, 62, 128);
 
 }
-
+.heading {
+    padding-left: 10px;
+}
 .nav a:hover{
     color: rgb(97, 39, 204);
     font-size: large;
