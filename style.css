@@ -85,14 +85,17 @@ hr{
 .education{
    
     width: 60vw;
-    margin: auto 20vw ;
+    margin: auto  ;
 
 }
 
 .education ul{
     padding: 20px;
     font-size: 20px;
-    list-style-type: square;
+    list-style-type:circle;
+    text-align: center;
+
+    
   
 }
 .education h2{
@@ -164,7 +167,13 @@ hr{
 .project li{
     padding: 20px 0;
 }
-
+.project a{
+    color: aliceblue;
+    text-decoration: none;    
+}
+.project a:hover{
+    color: aqua;
+}
 footer{
     padding-top: 200px; 
     padding-bottom: 20px;
@@ -172,3 +181,16 @@ text-align: center;
 }
 
 
+/* Scroll bar  */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color:#031022;
+    border-radius: 100px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color:white;
+    border-radius:200px;  }
