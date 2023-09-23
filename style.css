@@ -183,7 +183,7 @@ text-align: center;
 
 /* Scroll bar  */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
   
   ::-webkit-scrollbar-track {
@@ -192,5 +192,7 @@ text-align: center;
   }
   
   ::-webkit-scrollbar-thumb {
-    background-color:white;
-    border-radius:200px;  }
+    background-color:#1861cf;
+    border-radius:200px;  
+
+}
