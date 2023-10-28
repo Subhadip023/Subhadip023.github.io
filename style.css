@@ -27,6 +27,7 @@ nav{
     height: 5vh;
 }
 nav li{
+    display: block;
     list-style: none;
 }
 nav ul{
@@ -41,8 +42,11 @@ nav a{
  nav a:hover{
     color: aqua;
 }
-
-
+.manu svg{
+    display: none;
+    margin-right: 10px;
+ height: 45px;
+}
 .first{
     
   margin: 150px 20px 20px 20px;
@@ -195,4 +199,38 @@ text-align: center;
     background-color:aliceblue;
     border-radius:200px;  
 
+}
+
+/* for mobile  */
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  nav{
+    display: inline block;
+    height: auto;
+  }
+    nav ul{
+        margin-top: 10px;
+    display: none;
+    width: 100vw;
+    z-index: 9999;
+   }
+   nav ul li{
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 20px;
+   }
+.title{
+    width: 60vw;
+    height: 5vh;
+}
+.manu{
+    padding: auto;
+    width: 40vw;
+    height: 5vh;
+}
+    .manu svg{
+        padding-left: 60px;
+        display: block;
+    }
 }
