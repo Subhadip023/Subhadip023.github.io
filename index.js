@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
 
   const manuElement = document.querySelector(".manu");
 
@@ -10,4 +9,4 @@ document.addEventListener("DOMContentLoaded", function() {
       list.style.display = list.style.display === "none" ? "block" : "none";
     });
   });
-});
+
