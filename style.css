@@ -204,7 +204,7 @@ text-align: center;
 /* for mobile  */
 
 /* Responsiveness */
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   nav{
     display: inline block;
     height: auto;
