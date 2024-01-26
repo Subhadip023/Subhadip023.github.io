@@ -208,6 +208,8 @@ text-align: center;
   nav{
     display: inline block;
     height: auto;
+    justify-content: center;
+
     
   }
  
@@ -228,8 +230,7 @@ text-align: center;
 }
    
 .title{
-    width: 60vw;
-    height: 5vh;
+    font-size: 13px;
 }
 .manu{
     padding: auto;
