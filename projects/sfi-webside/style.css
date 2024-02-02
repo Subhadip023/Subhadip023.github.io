@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background: #000; */
+    color: aliceblue;
+}
+header{
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 0 5vw;
+    justify-content:center
+}
+.sfi-logo{
+    width: fit-content;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+letter-spacing: 1px;}
+.navbar ul{
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+}
+
+.navbar  a {
+    color:#ccc;
+text-decoration: none;}
+.navbar a:hover{
+    color: red;
+}
