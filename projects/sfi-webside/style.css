@@ -67,15 +67,15 @@ width: 70dvw;
 
         .navbar{
             display: none;
-            background: #000;
+            background: black;
+            opacity: 70%;
             height: fit-content;
             width: 42vw;
             position: fixed;
-            top: 15vw;
+            top: 18.3vw;
             right: 10px;
-            border: 2px solid white;
 border-radius: 20px;
-z-index: 9999;
+z-index: 999;
         }
 
         .navbar ul{
