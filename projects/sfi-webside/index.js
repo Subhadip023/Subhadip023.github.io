@@ -6,10 +6,4 @@ dropdrowen.addEventListener('click',function(){
     
 });
 
-links.forEach(function(link){
-link.addEventListener("click",function(){
-    navbar.style.display = navbar.style.display === "none" ? "block" : "none";
 
-});
-
-});
