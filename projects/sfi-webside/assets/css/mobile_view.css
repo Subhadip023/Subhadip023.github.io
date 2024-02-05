@@ -1,0 +1,117 @@
+
+@media (max-width: 700px) {
+    .dropdowen {
+        display: flex;
+
+        width: 10vw;
+        display: block;
+    }
+
+    .dropdowen svg {
+        padding-top: 23px;
+        width: 20vw;
+        height: 50px;
+    }
+
+    .sfi-logo img {
+        width: 70dvw;
+    }
+
+    header {
+        background-color: transparent;
+        padding: 0;
+
+    }
+
+    .logandsvg {
+        position: fixed;
+        display: flex;
+        gap: 30px;
+        background-color: black;
+        width: 100vw;
+    }
+
+
+    .navbar {
+        display: none;
+        background: black;
+        opacity: 70%;
+        height: fit-content;
+        width: 42vw;
+        position: fixed;
+        top: 18.3vw;
+        right: 10px;
+        border-radius: 20px;
+        z-index: 999;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: block;
+        padding: 20px;
+    }
+
+    .navbar ul li {
+        padding: 10px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .navbar li a {
+        color: #ccc;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    .navbar a:hover {
+        color: red;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar.show-navbar {
+        display: block;
+    }
+
+
+    .contaner{
+        display: inline;
+        padding-top: 10px;
+    }
+
+    .banner{
+margin-top: 9vh;
+    }
+.quotes {
+    margin: 20px auto;
+    
+    gap: 10px;
+    width: 80vw;
+    
+  }
+
+  .notification_home{
+    height: 100px;
+    width: 100vw;
+}
+.news_home{
+    width: 100vw;
+    height: 100px;
+
+
+}
+.quotes img{
+    margin-right: 5px;
+    height: 200px;
+    float: left;
+    border-radius: 50px;
+}
+.quotes p{
+
+    font-size: 20px;
+    text-align: justify;
+}
+
+}
