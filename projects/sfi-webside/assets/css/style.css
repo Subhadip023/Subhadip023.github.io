@@ -68,7 +68,7 @@ header {
     /* transition: opacity 3s ease; */
     border-radius: 50px;
     box-shadow: 5px 10px 28px transparent; /* Initial shadow with transparent color */
-    transition: box-shadow 3s linear,opacity 3s ease; /* Apply transition effect to box-shadow property */
+    transition: box-shadow 6s linear,opacity 3s ease; /* Apply transition effect to box-shadow property */
     }
         
 
