@@ -4,6 +4,7 @@
 
   const lists = document.querySelectorAll("nav ul");
   const tabs =document.querySelectorAll("nav ul li");
+  
 
   manuElement.addEventListener("click", function() {
     lists.forEach(function(list) {
@@ -23,6 +24,7 @@
       </svg>`;
       }
     });
+    
   });
 
 tabs.forEach(function(tab){

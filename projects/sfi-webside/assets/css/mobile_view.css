@@ -1,4 +1,3 @@
-
 @media (max-width: 700px) {
     .dropdowen {
         display: flex;
@@ -76,42 +75,54 @@
     }
 
 
-    .contaner{
+    .contaner {
         display: inline;
         padding-top: 10px;
     }
 
-    .banner{
-margin-top: 9vh;
+    .banner {
+        margin-top: 9vh;
     }
-.quotes {
-    margin: 20px auto;
-    
-    gap: 10px;
-    width: 80vw;
-    
-  }
 
-  .notification_home{
+    .quotes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto;
+
+        gap: 10px;
+        width: 80vw;
+
+    }
+
+    .quotes img {
+        margin-right: 5px;
+        height: 250px;
+        width: 250px;
+        float: left;
+        border-radius: 50px;
+    }
+
+    .quotes p {
+
+        font-size: 20px;
+        text-align: justify;
+    }
+    .karl_qoration{
+        font-size: 20px;
+    }
+
+}
+
+
+.notification_home {
     height: 100px;
     width: 100vw;
 }
-.news_home{
+
+.news_home {
     width: 100vw;
     height: 100px;
 
-
-}
-.quotes img{
-    margin-right: 5px;
-    height: 200px;
-    float: left;
-    border-radius: 50px;
-}
-.quotes p{
-
-    font-size: 20px;
-    text-align: justify;
-}
 
 }
