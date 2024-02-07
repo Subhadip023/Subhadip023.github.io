@@ -52,7 +52,7 @@ header {
     width: 100vw;
 }
 .quotes {
-    margin: 20px auto;
+    margin: 50px auto;
     
     gap: 10px;
     width: 60vw;
@@ -60,7 +60,7 @@ header {
   }
 
 .quotes img{
-    margin-right: 15px;
+    margin-right: 25px;
     height: 300px;
     /* width: 320px; */
     float: left;
@@ -96,11 +96,13 @@ justify-content: center;
 font-size: 30px;
 text-decoration: underline red;}
 
-
-
-
 .Karl{
     color: red;
     font-family: 'Cedarville Cursive',cursive;
+}
+
+.notification_home{
+    background: lightgreen ;
+    he
 }
 

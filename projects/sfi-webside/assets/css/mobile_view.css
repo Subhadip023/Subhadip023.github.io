@@ -76,7 +76,7 @@
 
 
     .contaner {
-        display: inline;
+        display: flex;
         padding-top: 10px;
     }
 
@@ -111,18 +111,5 @@
     .karl_qoration{
         font-size: 20px;
     }
-
-}
-
-
-.notification_home {
-    height: 100px;
-    width: 100vw;
-}
-
-.news_home {
-    width: 100vw;
-    height: 100px;
-
 
 }

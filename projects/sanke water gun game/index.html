@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Water Gun Game </title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 99vh;
+        }
+
+        .contaner {
+            height: 90vh;
+            width: 90vw;
+            display: grid;
+            grid-template-columns: 1fr 0.5fr 1fr;
+            grid-template-rows: 1.5fr 1fr;
+            gap: 9px;
+        }
+
+        .computer {
+            /* background: lightblue; */
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0px 15px 12px 0px;
+
+            /* justify-content: center; */
+
+        }
+
+        .vs {
+            /* background-color: red; */
+            display: flex;
+            flex-direction: column;
+            padding-top: 100px;
+            align-items: center;
+
+
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0px 15px 12px 0px rgb(76, 124, 185);
+
+            /* justify-content:  space-around; */
+        }
+
+        .user_btn {
+            margin-top: 20px;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        button {
+            background: whitesmoke;
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+            border: 2px solid aqua;
+            font-size: large;
+        }
+
+        button:hover {
+            background: aquamarine;
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+
+            
+        }
+        .user  img{
+            box-shadow: 0px 15px 12px rgb(34, 49, 44);
+            border-radius: 20px;
+
+        }
+        .computer img{
+            box-shadow: 0px 15px 12px rgb(34, 49, 44);
+            border-radius: 20px;
+
+        }
+
+        .ans {
+            /* display: none; */
+            background: lightgrey;
+            height: fit-content;
+            width: 200px;
+            font-size: 30px;
+            color: brown;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 10px;
+            margin: auto 0;
+        }
+
+
+        .result {
+            grid-column: span 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            color: blue;
+            font-size: 25px;
+            text-align: center;
+            
+
+
+        }
+
+        .total_match {
+            background-color: aquamarine;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 20px;
+            box-shadow: 0px 15px 12px rgb(34, 49, 44);
+
+        }
+
+        .user_win {
+            background-color: aquamarine;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 20px;
+            box-shadow: 0px 15px 12px rgb(34, 49, 44);
+
+
+        }
+
+        .computer_win {
+            background-color: aquamarine;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            box-shadow: 0px 15px 12px rgb(34, 49, 44);
+
+        }
+
+        h2 {
+            font-size: 35px;
+        }
+        hr{
+           border: 2px solid orange;
+           width: 150px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="contaner">
+        <div class="computer">
+            <h2>Computer choice</h2>
+            <div class="computer_img">
+            </div>
+
+
+        </div>
+        <div class="vs">
+            <img src="./images/57b795a65dd8857ce31f3c0596ff0667.jpg" alt="">
+            <div class="ans">
+Winer Result                
+            </div>
+        </div>
+
+        <div class="user">
+            <h2>Your choice</h2>
+            <div class="user_choicen_img" style="height: 200px;">
+            </div>
+            <div class="user_btn">
+                <button class="btn" onclick="game('sanke')">Snake</button>
+                <button onclick="game('water')">Water</button>
+                <button onclick="game('gun_user')">Gun</button>
+            </div>
+
+        </div>
+        <div class="result">
+            <div class="total_match">Total Matches <hr></div>
+            <div class="user_win">You Win <hr></div>
+            <div class="computer_win">Computer Win  <hr></div>
+        </div>
+    </div>
+
+
+    <script>
+        let user_image = document.querySelector('.user_choicen_img');
+        let computer_img = document.querySelector('.computer_img');
+        let ans = document.querySelector('.ans');
+        let total_match = document.querySelector('.total_match');
+        let user_win_div = document.querySelector('.user_win');
+        let computer_win_div = document.querySelector('.computer_win');
+        let count = 0;
+        let user_win = 0;
+        let computer_win = 0;
+        function game(mas) {
+            count++;
+            const choice = ["sanke", 'water', 'gun'];
+
+            let computer_choice = choice[Math.floor(Math.random() * 3)];
+
+            user_image.innerHTML = `<img src="./images/${mas}.jpg" alt="">`
+            computer_img.innerHTML = `<img src="./images/${computer_choice}.jpg" alt="">`
+
+
+            if (mas === "gun_user" && computer_choice === "sanke") {
+                ans.innerHTML = "You Win";
+                user_win++;
+
+            }
+            else if (mas === "sanke" && computer_choice === "water") {
+                ans.innerHTML = "You Win";
+                user_win++;
+
+
+
+            }
+            else if (mas === "water" && computer_choice === "gun") {
+                ans.innerHTML = "You Win";
+                user_win++;
+
+
+
+            }
+            else if (mas === computer_choice) {
+                ans.innerHTML = "Drow"
+            }
+            else {
+                ans.innerHTML = "Computer Win"
+                computer_win++;
+
+
+            }
+            total_match.innerHTML = "Total Matches <hr><br> " + count;
+            user_win_div.innerHTML = "You Win <hr><br> " + user_win;
+            computer_win_div.innerHTML = "Computer Win  <hr><br> " + computer_win;
+        }
+
+
+    </script>
+</body>
+
+</html>
