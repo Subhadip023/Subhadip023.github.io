@@ -87,10 +87,11 @@ hr{
     
 }
 .education{
-   
+   display: flex;
+flex-wrap: wrap;
     width: 70vw;
     margin: auto  ;
-
+justify-content: center;
 }
 
 .education ul{
@@ -103,6 +104,8 @@ hr{
   
 }
 .education h2{
+    width: 100%;
+    margin: 0 auto;
     padding-top: 150px;
     font-size: 40px;
 }
