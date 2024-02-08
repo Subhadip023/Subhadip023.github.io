@@ -57,7 +57,6 @@ Winer Result
         let user_win = 0;
         let computer_win = 0;
         function game(mas) {
-            mas=mas.split("_")[0];
             count++;
             const choice = ["sanke", 'water', 'gun'];
 
@@ -66,6 +65,7 @@ Winer Result
             user_image.innerHTML = `<img src="./images/${mas}.jpg" alt="">`
             computer_img.innerHTML = `<img src="./images/${computer_choice}.jpg" alt="">`
 
+            mas=mas.split("_")[0];
 
             if (mas === "gun_user" && computer_choice === "sanke") {
                 ans.innerHTML = "You Win";
