@@ -15,16 +15,11 @@ body {
 }
 
 .computer {
-    /* background: lightblue; */
     display: flex;
     align-items: center;
     flex-direction: column;
     box-shadow: 0px 15px 12px 0px;
     border-radius: 20px;
-
-
-    /* justify-content: center; */
-
 }
 
 .vs {
