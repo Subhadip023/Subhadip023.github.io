@@ -76,7 +76,7 @@
 
 
     .contaner {
-        display: flex;
+        display: inline;
         padding-top: 10px;
     }
 
@@ -112,4 +112,13 @@
         font-size: 20px;
     }
 
+    .notification_home{
+        position: absolute;
+    z-index: 999;
+    background: #000;
+    height: 500px;
+    width: 400px;
+    top: 40vh;
+    left: 20px;
+    }
 }
