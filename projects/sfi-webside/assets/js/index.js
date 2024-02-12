@@ -6,6 +6,8 @@ dropdrowen.addEventListener('click',function(){
     
 });
 window.onload = function () {
+    let tom1 = new Audio("Badhte Cholo.mp3");
+    tom1.play();
     document.querySelector('.banner img').style.opacity = '1';
     document.querySelector('.kalr_quote ').style.opacity = '1';
     document.querySelector('.quotes img').style.opacity = '1';
