@@ -42,7 +42,7 @@
         right: 10px;
         border-radius: 20px;
         z-index: 999;
-    }
+        }
 
     .navbar ul {
         list-style: none;
@@ -76,12 +76,22 @@
 
 
     .contaner {
-        display: inline;
+        display: flex;
+        flex-direction: column;
         padding-top: 10px;
+    }
+    .notification_home{
+        display: block;
+        background:red;
+        z-index: 0;
+        height: 20vh;
+    }
+    .hn{
+        animation: none ;
     }
 
     .banner {
-        margin-top: 10vh;
+        margin-top: 9.6vh;
     }
 
     .quotes {
@@ -112,13 +122,6 @@
         font-size: 20px;
     }
 
-    .notification_home{
-        position: absolute;
-    z-index: 999;
-    background: #000;
-    height: 500px;
-    width: 400px;
-    top: 40vh;
-    left: 20px;
-    }
-}
+      
+    
+    }      

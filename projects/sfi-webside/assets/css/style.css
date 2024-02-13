@@ -1,145 +1,143 @@
 * {
-    margin: 0;
-    padding: 0;
-    /* background: #000; */
+  margin: 0;
+  padding: 0;
+  /* background: #000; */
 }
 
 header {
-    background-color: #000;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: 0 5vw;
-    justify-content: center
+  background-color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 5vw;
+  justify-content: center;
 }
 
 .sfi-logo {
-    width: fit-content;
+  width: fit-content;
 }
 
 .dropdowen {
-    display: none;
+  display: none;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
 }
 
 .navbar ul {
-    list-style: none;
-    display: inline-flex;
-    gap: 20px;
+  list-style: none;
+  display: inline-flex;
+  gap: 20px;
 }
 
 .navbar a {
-    color: #ccc;
-    text-decoration: none;
+  color: #ccc;
+  text-decoration: none;
 }
 
 .navbar a:hover {
-    color: red;
+  color: red;
 }
-
 
 .banner img {
-    width: 100vw;
-
+  width: 100vw;
 }
-.contaner{
-    display: flex;
-    width: 100vw;
-
+.contaner {
+  display: flex;
+  width: 100vw;
 }
 .quotes {
-    margin: 50px auto;
-    gap: 10px;
-    width: 60vw;
-    
-  }
-
-.quotes img{
-    margin-right: 25px;
-    height: 300px;
-    /* width: 320px; */
-    float: left;
-    opacity: 0; /* Initially set opacity to 0 */
-    /* transition: opacity 3s ease; */
-    border-radius: 50px;
-    box-shadow: 5px 10px 28px transparent; /* Initial shadow with transparent color */
-    transition: box-shadow 6s linear,opacity 3s ease; /* Apply transition effect to box-shadow property */
-    }
-        
-
-.quotes p{
-text-align: justify;
-    font-size: 30px;
-    font-family: 'Playfair Display', serif;
-}
-.kalr_quote{
-    opacity: 0; /* Initially set opacity to 0 */
-    transition: opacity 3s ease;
+  margin: 50px auto;
+  gap: 10px;
+  width: 60vw;
 }
 
-.karl_qoration{
-    font-size: 30px;
-    color: red;
+.quotes img {
+  margin-right: 25px;
+  height: 300px;
+  /* width: 320px; */
+  float: left;
+  opacity: 0; /* Initially set opacity to 0 */
+  /* transition: opacity 3s ease; */
+  border-radius: 50px;
+  box-shadow: 5px 10px 28px transparent; /* Initial shadow with transparent color */
+  transition: box-shadow 6s linear, opacity 3s ease; /* Apply transition effect to box-shadow property */
 }
 
-
- h2{
-    width: 100%;
-text-align: center;
-align-items: center;
-justify-content: center;
-font-size: 30px;
-text-decoration: underline red;}
-
-.Karl{
-    color: red;
-    font-family: 'Cedarville Cursive',cursive;
+.quotes p {
+  text-align: justify;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
 }
-.notification_home{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    overflow: hidden;
+.kalr_quote {
+  opacity: 0; /* Initially set opacity to 0 */
+  transition: opacity 3s ease;
+}
+
+.karl_qoration {
+  font-size: 30px;
+  color: red;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-decoration: underline red;
+}
+
+.Karl {
+  color: red;
+  font-family: "Cedarville Cursive", cursive;
+}
+
+.notification_home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 .notification_home ::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for webkit browsers */
+  display: none; /* Hide scrollbar for webkit browsers */
 }
 .notification_home {
-    position: absolute;
-    z-index: 999;
-    background: #000;
-    height: 500px;
-    width: 400px;
-    top: 40vh;
-    left: 20px;
-    overflow: hidden; /* Hide any overflowing content */
+  position: absolute;
+  z-index: 999;
+  background: #000;
+  height: 500px;
+  width: 400px;
+  top: 40vh;
+  left: 20px;
+  overflow: hidden; /* Hide any overflowing content */
 }
 
 .notification_home ::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for webkit browsers */
+  display: none; /* Hide scrollbar for webkit browsers */
 }
 
 .hn {
-    margin: 7px auto;
-    background: white;
-    height: 40px;
-    width: 350px;
+  margin: 7px auto;
+  background: white;
+  height: 40px;
+  width: 350px;
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(calc(-100% * 19)); /* Adjust the number of notifications */
-    }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(
+      calc(-100% * 19)
+    ); /* Adjust the number of notifications */
+  }
 }
 
 .notification_home .hn {
-    animation: scroll 15s linear 1; /* Adjust animation duration as needed */
+  animation: scroll 15s linear 1; /* Adjust animation duration as needed */
 }
