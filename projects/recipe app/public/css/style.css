@@ -87,8 +87,12 @@ input[type="text"]::placeholder {
     /* background: blue; */
 }
 .recipe .heading{
+    /* background: #000; */
+    height: 10vh;
 text-align: center;
 font-size:35px ;
+display: flex;
+align-items: center;
 }
 
 
