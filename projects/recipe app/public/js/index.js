@@ -4,25 +4,35 @@ const ingredientInput=document.getElementById('ingredientInput');
 const recipes=document.querySelector('.recipes');
 const recipe_details=document.getElementById('recipe_details');
 const closed_recipeDetails=document.getElementById('closed_recipeDetails');
+const recipes_header=document.getElementById('recipes_header');
 
 const fetchRecipes=async (quary)=>{
+  recipes.innerHTML = '<div class="loader"></div>  ';
+
   const data=await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${quary}
   `);
   const response=await data.json();
-  response.meals.forEach(element => {
-    const recipeDiv=document.createElement('div');
-    recipeDiv.classList.add('recipe');
-    recipeDiv.innerHTML=`
-    <div class="heading">${element.strMeal}</div>
-    <div class="image">
-      <img src="${element.strMealThumb}" alt="" />
-    </div>
-    <div class="button">
-    <button onclick="getDetails(${element.idMeal})">Get Recipe</button>
-    </div>
-    `
-    recipes.appendChild(recipeDiv);
-  }); 
+  recipes.innerHTML = '';
+
+    if (response.meals) {
+      response.meals.forEach(element => {
+        const recipeDiv = document.createElement('div');
+        recipeDiv.classList.add('recipe');
+        recipeDiv.innerHTML = `
+          <div class="heading">${element.strMeal}</div>
+          <div class="image">
+            <img src="${element.strMealThumb}" alt="" />
+          </div>
+          <div class="button">
+            <button onclick="getDetails(${element.idMeal})">Get Recipe</button>
+          </div>
+        `;
+        recipes.appendChild(recipeDiv);
+      });
+    } else {
+      // Display message if no recipes found
+      recipes.innerHTML = '<h2>No recipes found</h2>';
+    }
 }
 search_btn.addEventListener("click",(e)=>{
   e.preventDefault();
@@ -87,3 +97,44 @@ const getDetails=async(id)=>{
 </svg>
   `;
 }
+
+
+// window.onload(function(){
+//   recipes.innerHTML = '<div class="loader"></div>  ';
+//   fetchRecipesOnload();
+// });
+
+
+const fetchRecipesOnload=async ()=>{
+  recipes.innerHTML = '<div class="loader"></div>  ';
+for (let index = 0; index < 10; index++) {
+  const data=await fetch(`https://www.themealdb.com/api/json/v1/1/random.php`);
+  const response=await data.json();
+  
+  element=response.meals[0];
+  const recipeDiv = document.createElement('div');
+  recipeDiv.classList.add('recipe');
+  recipeDiv.innerHTML = `
+    <div class="heading">${element.strMeal}</div>
+    <div class="image">
+      <img src="${element.strMealThumb}" alt="" />
+    </div>
+    <div class="button">
+      <button onclick="getDetails(${element.idMeal})">Get Recipe</button>
+    </div>
+  `;
+  recipes.appendChild(recipeDiv);
+  if(document.querySelectorAll(".recipe").length===1){
+    recipes.querySelector('.loader').remove();
+
+  }
+}
+
+
+  
+}
+
+window.onload = (event) => {
+  fetchRecipesOnload();
+  
+};
