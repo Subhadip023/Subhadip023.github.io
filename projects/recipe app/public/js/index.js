@@ -13,8 +13,9 @@ const fetchRecipes=async (quary)=>{
   `);
   const response=await data.json();
   recipes.innerHTML = '';
-
+  
     if (response.meals) {
+      recipes_header.innerHTML=`Searching result on "${quary}" <hr>`;
       response.meals.forEach(element => {
         const recipeDiv = document.createElement('div');
         recipeDiv.classList.add('recipe');

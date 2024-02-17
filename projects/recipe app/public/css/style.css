@@ -65,7 +65,7 @@ input[type="text"]::placeholder {
 
  .recipes {
     margin: auto;
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
@@ -77,7 +77,20 @@ input[type="text"]::placeholder {
     /* background: #000; */
 }
 
-
+#recipes_header{
+    /* background: #000; */
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+hr{
+    margin-top: 2vh;
+    width: 76vw;
+}
 .recipe{
     display: flex;
     flex-direction: column;
@@ -88,7 +101,8 @@ input[type="text"]::placeholder {
 }
 .recipe .heading{
     /* background: #000; */
-    height: 10vh;
+   min-height:  10vh;
+    max-height:fit-content;
 text-align: center;
 font-size:35px ;
 display: flex;
