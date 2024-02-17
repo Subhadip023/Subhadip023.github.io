@@ -79,7 +79,7 @@ const getDetails=async(id)=>{
   ${ingredientList}
   </ol>
   <h3>Watch ON YouTube 
-  <a href=${meal.strYoutube}>Watch ON YouTube :link</a> 
+  <a href=${meal.strYoutube}> link</a> 
   </h3>
   </div>
   <svg id="closed_recipeDetails" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#FBFADA">
