@@ -176,7 +176,7 @@ display: flex;  }
     background-color: transparent; /* New background color when input is focused */
     border: transparent;
   }
-
+ 
   /* Change background color when input has value entered */
   #ingredientInput:not(:placeholder-shown) + #recipeSearchForm {
     background-color: transparent; /* New background color when input has value */
@@ -197,3 +197,7 @@ display: flex;  }
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+  #ingredientInput:focus {
+    outline: none;
+  }
+  

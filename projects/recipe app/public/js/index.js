@@ -31,7 +31,7 @@ const fetchRecipes=async (quary)=>{
       });
     } else {
       // Display message if no recipes found
-      recipes.innerHTML = '<h2>No recipes found</h2>';
+      recipes.innerHTML = `<h2>No recipes found on "${quary}"</h2>`;
     }
 }
 search_btn.addEventListener("click",(e)=>{
@@ -138,3 +138,4 @@ window.onload = (event) => {
   fetchRecipesOnload();
   
 };
+
