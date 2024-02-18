@@ -32,6 +32,7 @@ const fetchRecipes=async (quary)=>{
       });
     } else {
       // Display message if no recipes found
+      recipes_header.innerHTML=` `;
       recipes.innerHTML = `<h2>No recipes found on "${quary}"</h2>`;
     }
 }
