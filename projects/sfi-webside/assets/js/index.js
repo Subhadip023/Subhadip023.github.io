@@ -10,8 +10,7 @@ dropdrowen.addEventListener('click',function(){
     
 });
 window.onload = function () {
-    let tom1 = new Audio("Badhte Cholo.mp3");
-    tom1.play();
+
     document.querySelector('.banner img').style.opacity = '1';
     document.querySelector('.kalr_quote ').style.opacity = '1';
     document.querySelector('.quotes img').style.opacity = '1';
@@ -19,12 +18,12 @@ window.onload = function () {
     let i = 0;
     const intervalId = setInterval(function() {
       showNotification(`Notifications Title ${i}`);
-      if (i === 5) {
+      if (i === 9) {
         clearInterval(intervalId);
         console.log("Interval stopped at i = 5");
       }
       i++;
-    }, 2000);
+    }, 1000);
     
   };
 
@@ -53,8 +52,11 @@ C255,161.018,253.42,157.202,250.606,154.389z"
   />
 </svg>`
 notification_home.appendChild(hn);
-setTimeout(()=>{
-    hn.remove();
-  },5000);
+setTimeout(() => {
+  hn.classList.add('remove'); // Add the 'remove' class to trigger the fade-out and shrink animation
+  setTimeout(() => {
+      hn.remove(); // Remove the element after the animation completes
+  }, 500); // Adjust the timeout to match the duration of the animation
+}, 5000);
 }
 

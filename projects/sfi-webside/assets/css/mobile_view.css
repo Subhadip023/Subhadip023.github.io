@@ -39,7 +39,7 @@
         width: 42vw;
         position: fixed;
         top: 18.3vw;
-        right: 20px;
+        right: 30px;
         border-radius: 20px;
         z-index: 9999;
         }
@@ -119,38 +119,43 @@
 
       
 
-  .notification_home ::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for webkit browsers */
-  }
+  
   .notification_home {
-    position: absolute;
-    z-index: 999;
-    background: #000;
+
+    position: fixed;
+    /* display: flex; */
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: flex-end;    z-index: 999;
+    /* background: green; */
     height: 500px;
     width: 400px;
-    top: 40vh;
+    top: 46vh;
     left: 20px;
-    overflow: hidden; /* Hide any overflowing content */
   }
-  
-  .notification_home ::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for webkit browsers */
-  }
+
   
   .hn {
     display: flex;
+
     gap:20px;
     justify-content: center;
     align-items: center;
-    margin: 7px auto;
+    margin: 20px auto;
     background: white;
     height: 60px;
     width: 350px;
     font-size: 20px;
     color: red;
-    
-
+    position: relative;
+    opacity: 0; 
+    transform: scale(0.5); /* Start with smaller size */
+    animation: popup 0.5s ease forwards;
+    box-shadow: 10px 10px 30px red;
   }
+
+
+
   .hn svg{
     border: 2px solid red;
     border-radius: 505%;
@@ -158,29 +163,38 @@
     fill: red;
     height:25px;
     width: 25px;
+    
   }
   .hn svg:hover{
     fill: rgb(192, 4, 4);
     border: 2px solid  rgb(192, 4, 4);
 
   }
-  
-  @keyframes scroll {
+
+  @keyframes popup {
     0% {
-      transform: translateY(0);
+        opacity: 0;
+        transform: scale(0.5);
     }
     100% {
-      transform: translateY(
-        calc(-100% * 19)
-      ); /* Adjust the number of notifications */
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+ 
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
     }
   }
-  
-  .notification_home .hn {
-    /* animation: scroll 15s linear 1; Adjust animation duration as needed */
-    animation: none 15s linear 1; /* Adjust animation duration as needed */
-  }
- 
 
+  .hn.remove {
+    animation: fadeOut 0.5s ease forwards;
+  }
     
     }      
