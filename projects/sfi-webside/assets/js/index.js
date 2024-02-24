@@ -15,15 +15,15 @@ window.onload = function () {
     document.querySelector('.kalr_quote ').style.opacity = '1';
     document.querySelector('.quotes img').style.opacity = '1';
     document.querySelector('.quotes img').style.boxShadow = ' 5px 10px 28px red';
-    let i = 0;
-    const intervalId = setInterval(function() {
-      showNotification(`Notifications Title ${i}`);
-      if (i === 9) {
-        clearInterval(intervalId);
-        console.log("Interval stopped at i = 5");
-      }
-      i++;
-    }, 1000);
+    // let i = 0;
+    // const intervalId = setInterval(function() {
+    //   showNotification(`Notifications Title ${i}`);
+    //   if (i === 9) {
+    //     clearInterval(intervalId);
+    //     console.log("Interval stopped at i = 5");
+    //   }
+    //   i++;
+    // }, 1000);
     
   };
 
@@ -31,7 +31,13 @@ window.onload = function () {
 function showNotification (Notification_title) {
 let  hn=document.createElement('div');
 hn.classList.add('hn');
-hn.innerHTML=`  ${Notification_title}
+hn.innerHTML=` 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <line x1="10" y1="10" x2="90" y2="90" stroke="red" stroke-width="10"/>
+  <line x1="90" y1="10" x2="10" y2="90" stroke="red" stroke-width="10"/>
+</svg>
+
+${Notification_title}
 <svg
   fill="#000000"
   height="800px"
