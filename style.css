@@ -46,10 +46,16 @@ nav {
   text-decoration: none;
   color: var(--color3);
 }
+.navbar ul li a:hover {
+  text-decoration: underline ;
+
+  color: var(--color2);
+}
 
 .navbar svg {
   display: none;
 }
+
 
 .contaner {
   height: auto;
@@ -79,15 +85,45 @@ nav {
   width: 350px;
   border: 7px solid var(--color2);
   border-radius: 20px;
-  transition: border-radius 0.5s ease;
+  transition: border-radius 0.2s ease;
+  /* animation: popup 0.5s ease forwards; */
+
 }
 .profile_pic img:hover {
   border-radius: 30px;
 }
+
 .summary {
+  display: flex;
+  flex-wrap: wrap;
   /* background: #000; */
   width: 55vw;
-  height: 35vh;
+  min-height: 414px;
+  max-height:fit-content;
   margin: 20px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: justify;
+  /* animation: popup 0.5s ease forwards; */
+
 }
+
+.summary hr{
+  animation: popup 0.5s ease forwards;
+}
+
+
+@keyframes popup {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
 

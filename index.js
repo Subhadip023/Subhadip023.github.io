@@ -51,7 +51,6 @@
 //   });
 const summaryText = document.getElementById('summaryText');
 const words = summaryText.innerText.split(' ');
-console.log(words);
 let index = 0;
 
 summaryText.innerHTML = '';
@@ -62,8 +61,10 @@ const interval = setInterval(function() {
         index++;
     } else {
         clearInterval(interval); // Stop the interval when all words are displayed
+        summaryText.innerHTML += '<hr>'; // Add <hr> tag after displaying all words
     }
 }, 100);
+
 
 
 
