@@ -67,6 +67,7 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2px;
 }
 .profile_pic {
   /* background: red; */
@@ -83,14 +84,10 @@ nav {
 .profile_pic img:hover {
   border-radius: 30px;
 }
-
-.summery {
+.summary {
   /* background: #000; */
-  width: 50vw;
-  padding: 0 20px;
-  min-height:414px ;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  
+  width: 55vw;
+  height: 35vh;
+  margin: 20px;
 }
+

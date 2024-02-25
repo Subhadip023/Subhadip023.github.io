@@ -49,6 +49,23 @@
 //     });
 //   });
 //   });
+const summaryText = document.getElementById('summaryText');
+const words = summaryText.innerText.split(' ');
+console.log(words);
+let index = 0;
+
+summaryText.innerHTML = '';
+
+const interval = setInterval(function() {
+    if (index < words.length) {
+        summaryText.innerHTML += words[index] + ' ';
+        index++;
+    } else {
+        clearInterval(interval); // Stop the interval when all words are displayed
+    }
+}, 100);
+
+
 
 
 
