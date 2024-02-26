@@ -58,10 +58,10 @@ nav {
 
 
 .contaner {
+  
   height: auto;
   width: 80vw;
   padding: 10px;
-
   margin: 10vh auto;
 }
 
@@ -108,7 +108,7 @@ nav {
 
 }
 
-.summary hr{
+ hr{
   animation: popup 0.5s ease forwards;
 }
 

@@ -1,0 +1,137 @@
+@media (max-width:700px) {
+   
+ 
+hr {
+    margin: 40px auto;
+    height: 5px;
+    width: 200px;
+    background: var(--color3);
+  }
+  nav {
+    /* background:red; */
+    display: flex;
+    flex-wrap: wrap;
+    height: 8vh;
+    width: 90vw;
+    margin: auto;
+    align-items: center;
+  }
+  .navbar {
+    background: var(--color1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+ 
+  }
+  .navbar ul {
+    display: block;
+    list-style: none;
+    background:var(--color1);
+    border: 2px solid var(--color3);
+    border-radius: 10px;
+    box-shadow: 10px 20px 10;
+    position: fixed;
+    top: 6vh;
+    right: 0;  
+
+  
+  }
+  .navbar ul li {
+    display:block;
+    padding: 10px;
+    margin: 0 auto;
+  
+    z-index: 5;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: var(--color3);
+  }
+  .navbar ul li a:hover {
+    text-decoration: underline ;
+  
+    color: var(--color2);
+  }
+  
+  .navbar svg {
+    display: flex;
+    width: 40px;
+  }
+  .manu{
+    /* background: green; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contaner {
+    height: auto;
+    width: 85vw;
+    padding: 10px;
+    margin: 10vh auto;
+  }
+  
+  .first {
+    /* background: gray; */
+    height: 90vh;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px;
+  }
+  .profile_pic {
+    height: 314px;
+    width: 264px;
+  }
+  .profile_pic img {
+    height: 300px;
+    width: 250px;
+    border: 7px solid var(--color2);
+    border-radius: 20px;
+    transition: border-radius 0.2s ease;
+    /* animation: popup 0.5s ease forwards; */
+  
+  }
+  .profile_pic img:hover {
+    border-radius: 30px;
+  }
+  
+  .summary {
+    display: flex;
+    flex-wrap: wrap;
+    /* background: #000; */
+    width: 70vw;
+    min-height: 414px;
+    max-height:fit-content;
+    margin: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;
+    /* animation: popup 0.5s ease forwards; */
+  
+  }
+  
+  hr{
+    animation: popup 0.5s ease forwards;
+  }
+  
+  /* #summaryText{
+font-size: 20px;
+  } */
+  
+  @keyframes popup {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+      
+}
