@@ -76,7 +76,6 @@ const getDetails=async(id)=>{
         break;
       }
   }
-  console.log( ingredientList)
   recipe_details.style.display="flex";
   recipe_details.innerHTML=`
   <div class="details">
@@ -126,10 +125,20 @@ for (let index = 0; index < 10; index++) {
     </div>
   `;
   recipes.appendChild(recipeDiv);
-  if(document.querySelectorAll(".recipe").length===1){
-    recipes.querySelector('.loader').remove();
-
+  const recipesList = document.getElementsByClassName('recipe');
+  for(let i = 0; i < recipesList.length; i++) {
+    recipesList[i].style.opacity = 0.2;
   }
+
+  if(document.querySelectorAll(".recipe").length === 10){
+    recipes.querySelector('.loader').remove();
+    const recipesList = document.getElementsByClassName('recipe');
+    for(let i = 0; i < recipesList.length; i++) {
+      recipesList[i].style.opacity = 1;
+    }
+  }
+  
+  
 }
 
 

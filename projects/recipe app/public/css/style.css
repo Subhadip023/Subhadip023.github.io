@@ -71,6 +71,7 @@ input[type="text"]::placeholder {
   overflow-x: auto; /* Add this line */
   overflow-y: hidden; /* Hide vertical scrollbar */
   /* background: #000; */
+
 }
 
 #recipes_header {
@@ -199,6 +200,10 @@ hr {
   width: 120px;
   height: 120px;
   animation: spin 2s linear infinite;
+  z-index: 5;
+  position: fixed;
+  top: 50vh;
+  
 }
 
 @keyframes spin {
