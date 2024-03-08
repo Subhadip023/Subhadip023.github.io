@@ -58,7 +58,7 @@ nav {
 
 
 .contaner {
-  
+  background: green;
   height: auto;
   width: 80vw;
   padding: 10px;
@@ -125,5 +125,11 @@ nav {
   }
 }
 
+.education{
+  background: #000;
+  padding-top: 10vh;
 
-
+}
+.education ul  {
+  margin: 10px;
+}
