@@ -5,7 +5,7 @@ hr {
     margin: 40px auto;
     height: 5px;
     width: 200px;
-    background: var(--color3);
+    background: var(--color2);
   }
   nav {
     /* background:red; */
@@ -25,15 +25,16 @@ hr {
  
   }
   .navbar ul {
-    display: block;
+    display: none;
     list-style: none;
+    text-align: center;
     background:var(--color1);
     border: 2px solid var(--color3);
     border-radius: 10px;
     box-shadow: 10px 20px 10;
     position: fixed;
-    top: 6.5vh;
-    right: 0;  
+    top: 7vh;
+    right: 1vh;  
 
   
   }
@@ -133,5 +134,7 @@ font-size: 20px;
       transform: scale(1);
     }
   }
-      
+  .education{
+    width: 100%;
+  }
 }

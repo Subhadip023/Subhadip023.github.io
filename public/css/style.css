@@ -1,24 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-:root {
-  --main-bg-color: #161a30;
-  --color1: #31304d;
-  --color2: #b6bbc4;
-  --color3: #f0ece5;
-}
-body {
-  background-color: var(--main-bg-color);
-  color: var(--color3);
-}
-
-hr {
-  margin: 40px auto;
-  height: 5px;
-  width: 500px;
-  background: var(--color3);
-}
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -57,8 +36,7 @@ nav {
 }
 
 
-.contaner {
-  background: green;
+.container {
   height: auto;
   width: 80vw;
   padding: 10px;
@@ -107,29 +85,7 @@ nav {
   /* animation: popup 0.5s ease forwards; */
 
 }
-
- hr{
-  animation: popup 0.5s ease forwards;
-}
-
-
-@keyframes popup {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
 .education{
-  background: #000;
-  padding-top: 10vh;
+  width: 50vw;
+}
 
-}
-.education ul  {
-  margin: 10px;
-}
