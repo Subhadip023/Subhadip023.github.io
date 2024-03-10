@@ -15,6 +15,7 @@ hr {
     width: 90vw;
     margin: auto;
     align-items: center;
+    z-index: 999;
   }
   .navbar {
     background: var(--color1);
@@ -84,12 +85,12 @@ hr {
     margin-bottom: 2px;
   }
   .profile_pic {
-    height: 314px;
-    width: 264px;
+    height: 214px;
+    width: 164px;
   }
   .profile_pic img {
-    height: 300px;
-    width: 250px;
+    height: 200px;
+    width: 150px;
     border: 7px solid var(--color2);
     border-radius: 20px;
     transition: border-radius 0.2s ease;
@@ -110,7 +111,6 @@ hr {
     margin: 0 20px;
     align-items: center;
     justify-content: space-between;
-    text-align: justify;
     /* animation: popup 0.5s ease forwards; */
   
   }
@@ -136,5 +136,9 @@ font-size: 20px;
   }
   .education{
     width: 100%;
+    height: fit-content;
+  }
+  .tarning{
+    margin-top: 10px;
   }
 }
