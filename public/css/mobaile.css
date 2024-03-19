@@ -66,7 +66,26 @@ hr {
     display: flex;
     align-items: center;
   }
-  
+  .social_svgs{
+    margin: 20vh 0;
+    display: block;
+    width: 100vw;
+  }
+  .social_svgs svg{
+    display: flex;
+  margin: 50px 0;
+    fill: var(--color2);
+    height: 30px;
+    width:  30px;
+  }
+  .social_svgs svg:hover{
+    fill: var(--color3);
+  }
+  .full-page{
+    padding-top: 10vh;
+    height: 90vh;
+    padding-left: 20px;
+}
   .contaner {
     height: auto;
     width: 85vw;

@@ -35,6 +35,22 @@ nav {
 .navbar svg {
   display: none;
 }
+.social_svgs{
+  display: flex;
+justify-content: space-between;
+  width: 250px;
+}
+.social_svgs svg{
+  /* background:red; */
+  display: flex;
+
+  fill: var(--color3);
+  height: 40px;
+  width:  40px;
+}
+.social_svgs svg:hover{
+  fill: var(--color2);
+}
 
 
 .container {
