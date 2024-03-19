@@ -13,6 +13,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 555;
 }
 .navbar ul {
   list-style: none;
@@ -82,6 +83,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   text-align: justify;
+  font-size: 2rem;
   /* animation: popup 0.5s ease forwards; */
 
 }
