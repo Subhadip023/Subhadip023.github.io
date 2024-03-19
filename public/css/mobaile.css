@@ -78,19 +78,17 @@ hr {
     /* background: gray; */
     height: 90vh;
     font-size: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items:normal;
-    justify-content:center;
-    margin-bottom: 2px;
+ display: flex;
+ align-items:flex-start;
+ justify-content:center;
   }
   .profile_pic {
-    height: 314px;
-    width: 264px;
+    height: 214px;
+    width: 164px;
   }
   .profile_pic img {
-    height: 300px;
-    width: 250px;
+    height: 200px;
+    width: 150px;
     border: 7px solid var(--color2);
     border-radius: 20px;
     transition: border-radius 0.2s ease;
@@ -105,10 +103,10 @@ hr {
     display: flex;
     flex-wrap: wrap;
     /* background: #000; */
-    width: 70vw;
-    min-height: 414px;
-    max-height:fit-content;
-    margin: 0 20px;
+    width: 100%;
+    /* min-height: 414px; */
+    height:fit-content;
+    /* margin: 0 20px; */
     align-items: center;
     justify-content: space-between;
     /* animation: popup 0.5s ease forwards; */
