@@ -92,6 +92,7 @@ justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
   /* background: #000; */
+  padding-top: 20px;
   width: 55vw;
   min-height: 414px;
   max-height:fit-content;
@@ -100,7 +101,7 @@ justify-content: space-between;
   justify-content: space-between;
   text-align: justify;
   /* animation: popup 0.5s ease forwards; */
-
+font-size: 3rem;
 }
 .education{
   width: 50vw;
