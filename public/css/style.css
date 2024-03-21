@@ -5,7 +5,7 @@ nav {
   width: 90vw;
   margin: auto;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .navbar {
   background: var(--color1);
