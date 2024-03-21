@@ -49,21 +49,7 @@
 //     });
 //   });
 //   });
-const summaryText = document.getElementById('summaryText');
-const words = summaryText.innerText.split(' ');
-let index = 0;
 
-summaryText.innerHTML = '';
-
-const interval = setInterval(function() {
-    if (index < words.length) {
-        summaryText.innerHTML += words[index] + ' ';
-        index++;
-    } else {
-        clearInterval(interval); // Stop the interval when all words are displayed
-        summaryText.innerHTML += '<hr>'; // Add <hr> tag after displaying all words
-    }
-}, 100);
 
 
 

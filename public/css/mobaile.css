@@ -84,7 +84,7 @@ hr {
   .full-page{
     padding-top: 10vh;
     height: 90vh;
-    padding-left: 20px;
+    padding-left: 22px;
 }
   .contaner {
     height: auto;
@@ -96,18 +96,18 @@ hr {
   .first {
     /* background: gray; */
     height: 90vh;
-    font-size: 20px;
  display: flex;
  align-items:flex-start;
  justify-content:center;
+ margin-bottom: 2px;
   }
   .profile_pic {
-    height: 214px;
-    width: 164px;
+    height: 314px;
+    width: 264px;
   }
   .profile_pic img {
-    height: 200px;
-    width: 150px;
+    height: 300px;
+    width: 250px;
     border: 7px solid var(--color2);
     border-radius: 20px;
     transition: border-radius 0.2s ease;
@@ -129,7 +129,8 @@ hr {
     align-items: center;
     justify-content: space-between;
     /* animation: popup 0.5s ease forwards; */
-  
+    text-align: start;
+
   }
   
   hr{
