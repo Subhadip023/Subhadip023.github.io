@@ -62,7 +62,8 @@ justify-content: space-between;
 
 .first {
   /* background: gray; */
-  height: 90vh;
+  min-height: 90vh;
+  max-height: fit-content;
   font-size: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -79,13 +80,13 @@ justify-content: space-between;
   height: 400px;
   width: 350px;
   border: 7px solid var(--color2);
-  border-radius: 20px;
+  border-radius: 50%;
   transition: border-radius 0.2s ease;
   /* animation: popup 0.5s ease forwards; */
 
 }
 .profile_pic img:hover {
-  border-radius: 30px;
+  border-radius: 49%;
 }
 
 .summary {

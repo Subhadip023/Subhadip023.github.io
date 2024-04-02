@@ -3,10 +3,10 @@
     padding: 0;
   }
   :root {
-    --main-bg-color: #222831;
-    --color1: #31363F;
-    --color2: #76ABAE;
-    --color3: #EEEEEE;
+    --main-bg-color: #1B262C;
+    --color1: #0F4C75;
+    --color2: #3282B8;
+    --color3: #BBE1FA;
   }
   body {
     background-color: var(--main-bg-color);
@@ -65,6 +65,7 @@ hr {
   }
 
   footer{
-/* margin: 20px0 ; */
+margin: 20px0 ;
 background:var(--color1);
+padding: 10px;
   }
