@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* Container for the typing text */
+.typing-container {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  font-size: 1.5em;
+  font-family: monospace;
+}
+
+/* Typing effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Blinking cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
+}
+
+/* Apply animations */
+.typing-text {
+  display: inline-block;
+  animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+    </style>
 </head>
 <body>
-    
+    <div class="typing-container">
+        <p class="typing-text">Hello, this is a typing animation!</p>
+      </div>
+      
 </body>
 </html>

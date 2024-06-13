@@ -59,51 +59,99 @@ justify-content: space-between;
   padding: 10px;
   margin: 10vh auto;
 }
-
-.first {
-  /* background: gray; */
-  min-height: 90vh;
-  max-height: fit-content;
-  font-size: 30px;
+.home{
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2px;
+  gap: 30px;
 }
-.profile_pic {
-  /* background: red; */
-  height: 414px;
-  width: 364px;
-}
-.profile_pic img {
-  height: 400px;
-  width: 350px;
-  border: 7px solid var(--color2);
-  border-radius: 50%;
-  transition: border-radius 0.2s ease;
-  /* animation: popup 0.5s ease forwards; */
-
-}
-.profile_pic img:hover {
-  border-radius: 49%;
-}
-
-.summary {
-  display: flex;
-  flex-wrap: wrap;
+.heading{
+  font-size: 50px;
+  color: var(--color1);
+  margin-left: 20px;
   /* background: #000; */
-  padding-top: 20px;
-  width: 55vw;
-  min-height: 414px;
-  max-height:fit-content;
-  margin: 20px;
-  align-items: center;
-  justify-content: space-between;
-  text-align: justify;
-  /* animation: popup 0.5s ease forwards; */
-  font-size: 3rem;
 }
+
+.dynamic {
+  /* background: #000; */
+  font-size: 50px;
+  overflow: hidden;
+  height: 70px;
+  line-height: 60px;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -250px;
+  }
+}
+
+.dynamic ul li {
+  /* background: green; */
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px 0;
+  height:60px;
+  line-height: 60px;
+  animation: slide 7.5s steps(3) infinite;
+  animation-delay: 1s;
+  /* background: #000; */
+
+}
+
+.dynamic ul li span {
+  position: relative;
+  display: inline-block;
+}
+
+.dynamic ul li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: var(--main-bg-color);
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid red;
+  animation: typing 2.5s cubic-bezier(0, 0.07, 0.3, 0.91) infinite, blink-caret 0.75s step-end infinite;
+  animation-delay: 1s;
+ 
+}
+
+
+/* Blinking cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: red;
+  } 25% {
+    border-color: red;
+  }
+}
+
+
+@keyframes typing {
+  0% {
+    left: 0;
+    margin: 0 0 0 35px;
+  }
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+.dynamic ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
 .education{
   width: 50vw;
 }
