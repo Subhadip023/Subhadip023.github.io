@@ -83,7 +83,7 @@
   }
 
   .full-page {
-    padding-top: 0;
+    padding-top: 7vh;
     height: 87.5vh;
     padding-bottom: 2.5vh;
     height: fit-content;
@@ -133,7 +133,7 @@ font-size: 20px;
     height: fit-content;
   }
   .pic{
-    height: 250px;
+    height: 200px;
     width: 150px;
    margin: 10px 0;
   }
@@ -148,24 +148,15 @@ font-size: 20px;
     border-radius: 15px;
   }
   .heading {
-    font-size: 40px;
+    font-size: 30px;
     color: var(--color1);
     /* background: #000; */
   }
 
-  .dynamic {
-    padding-left: 20px;
-    /* background: #000; */
-    font-size: 25px;
-    overflow: hidden;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    margin: auto;
-  }
   .short-desc {
     /* background: yellow; */
-    font-size: 25px;
+    margin-top: 5px;
+    font-size: 20px;
     width: 90%;
     color: var(--color2);
     text-align: center;
@@ -173,8 +164,8 @@ font-size: 20px;
 
   .home-btns {
     /* background: #000; */
-    margin: 10px 0;
-    height: 50px;
+    margin: 20px 0;
+    height: 40px;
     width: 80%;
     display: flex;
     align-items: center;
@@ -182,16 +173,16 @@ font-size: 20px;
   }
 
   .home-btns button {
-    margin: 0 20px;
-    height: 50px;
+    margin: 0 10px;
+    height: 40px;
     width: 100px;
-    font-size: 20px;
+    font-size: 15px;
   }
   .social_svgs {
     margin-top: 0;
     /* background:red; */
     display: flex;
-    padding: 20px 0;
+    padding: 10px 0;
     height: 80px;
     width: 60%;
     align-items: center;
@@ -203,6 +194,7 @@ font-size: 20px;
     fill: var(--color1);
     height: 40px;
     width: 40px;
+
   }
   .social_svgs svg:hover {
     fill: var(--color3);
@@ -210,21 +202,38 @@ font-size: 20px;
 
   @keyframes slide {
     0% {
-      top: 0;
+      top: -5px;
     }
     100% {
-      top: -250px;
+      top: -160px;
     }
   }
+
+
+  .dynamic {
+    padding-left: 20px;
+    /* background: #000; */
+    font-size: 19px;
+    overflow: hidden;
+    height: 30px;
+    line-height: 60px;
+    text-align: center;
+    margin: auto;
+  }
+
+.dynamic ul{
+  /* background: #000; */
+}
 
   .dynamic ul li {
     /* background: green; */
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
     padding: 10px 0;
-    height: 60px;
-    line-height: 60px;
+    height: 30px;
+    line-height: 30px;
     /* animation: slide 7.5s steps(3) infinite; */
     animation: slide 7.5s steps(3) infinite;
     animation-delay: 1s;
@@ -234,12 +243,14 @@ font-size: 20px;
   .dynamic ul li span {
     position: relative;
     display: inline-block;
+    /* background: #000; */
+    width: 100vw;
   }
 
   .dynamic ul li span::after {
     content: "";
     position: absolute;
-    left: 0;
+    left: 100%;
     top: 0;
     background: var(--main-bg-color);
     height: 100%;
@@ -287,7 +298,6 @@ font-size: 20px;
   .projects {
     padding: 10px;
     height: 80%;
-    /* background: #000; */
     border: 5px solid var(--color2);
     border-radius: 20px;
     display: grid;
@@ -297,7 +307,38 @@ font-size: 20px;
     height: fit-content
   }
   
+  .project-info{
+    /* background: greenyellow; */
+    width: 95%;
+    font-size: 15px;
+    color: var(--color1);
+    text-align: justify;
+  }
+  .project-info h3{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 5px 0;
+    color: var(--color2);
+    text-align: center;
+  }
+  
+  .project-info h3:hover{
+    color: var(--color3);
+  }
 
+
+   
+.item{
+  /* background: #000; */
+  min-height: 40vh;
+  height: fit-content;
+  width: 100%;
+  /* border: 5px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center
+}
 
 
 .about{
