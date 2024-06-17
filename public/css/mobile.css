@@ -156,11 +156,12 @@ font-size: 20px;
   .dynamic {
     padding-left: 20px;
     /* background: #000; */
-    font-size: 35px;
+    font-size: 25px;
     overflow: hidden;
-    height: 70px;
+    height: 60px;
     line-height: 60px;
     text-align: center;
+    margin: auto;
   }
   .short-desc {
     /* background: yellow; */
