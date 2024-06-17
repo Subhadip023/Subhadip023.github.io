@@ -1,73 +1,98 @@
 * {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-
-  }
-  :root {
-    --main-bg-color: #f8f1f1;
-    --color1: #11698e;
-    --color2: #19456b;
-    --color3: #16c79a;
-  }
-  body {
-    background-color: var(--main-bg-color);
-    color: var(--color3);
-  }
-.full-page{
-    padding-top: 10vh;
-    height: 90vh;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+:root {
+  --main-bg-color: #f8f1f1;
+  --color1: #11698e;
+  --color2: #19456b;
+  --color3: #16c79a;
+}
+body {
+  background-color: var(--main-bg-color);
+  color: var(--color3);
+}
+.full-page {
+  padding-top: 10vh;
+  height: 87.5vh;
+  padding-bottom: 2.5vh ;
 }
 
 hr {
-    margin: 40px auto;
-    height: 6px;
-    width: 500px;
-    background: var(--color2);
-    border-radius: 20px;
+  margin: 40px auto;
+  height: 6px;
+  width: 500px;
+  background: var(--color2);
+  border-radius: 20px;
+}
+
+hr {
+  animation: popup 0.5s ease forwards;
+}
+
+@keyframes popup {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
   }
 
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
- hr{
-    animation: popup 0.5s ease forwards;
-  }
-  
-  
-  @keyframes popup {
-    0% {
-      opacity: 0;
-      transform: scale(0.5);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
+.font-normal {
+  font-size: 1.5rem;
+}
 
-  .font-normal{
-    font-size: 1.5rem;
-  }
+h2 {
+  font-size: 3rem;
+  padding: 15px 0;
+}
 
-  h2{
-    font-size: 3rem;
-    padding: 15px 0;
-  }
+.m-auto {
+  margin: auto;
+}
 
-  .m-auto{
-    margin: auto;
-  }
+ul {
+  padding: 0 20px;
+}
 
-  ul{
-    padding: 0 20px;
-  }
+a{
+  text-decoration: none;
+}
+.ta-center {
+  text-align: center;
+}
 
-  .ta-center{
-    text-align: center;
-  }
+.btn-primary {
+  background: var(--color2);
+  color: var(--main-bg-color);
+  border-radius: 10px;
+}
 
-  footer{
-margin: 20px0 ;
-background:var(--color1);
-padding: 10px;
-  }
+.btn-secondery {
+  background: var(--main-bg-color);
+  color: var(--color2);
+  /* border-color: transparent; */
+  border-radius: 10px;
+}
+
+button:hover {
+  color: var(--color2);
+  background: var(--color3);
+}
+
+footer {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  background: var(--color2);
+  color: white;
+  padding: 10px;
+  height: 2.5vh;
+}
