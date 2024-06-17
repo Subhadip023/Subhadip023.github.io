@@ -221,7 +221,7 @@ font-size: 20px;
 }
   
 .item{
-  background: #000;
+  /* background: #000; */
   min-height: 50vh;
   height: fit-content;
   width: 100%;
