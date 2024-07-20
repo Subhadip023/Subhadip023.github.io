@@ -50,10 +50,13 @@ nav {
 }
 
 .container {
+  display: none;
+  opacity: 0;
   height: auto;
   width: 80vw;
   padding: 10px;
   margin: 10vh auto;
+  transition: opacity 2s ease-in-out;
 }
 .home {
   /* background: #000; */

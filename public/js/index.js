@@ -1,6 +1,8 @@
 const manuElement = document.querySelector(".manu");
+const container = document.querySelector(".container");
 const lists = document.querySelectorAll("nav ul");
 const tabs = document.querySelectorAll("nav ul li");
+const loader=document.getElementById('loader');
 
 manuElement.addEventListener("click", function() {
   lists.forEach(function(list) {
@@ -40,3 +42,21 @@ tabs.forEach(function(tab) {
     });   }
   });
 });
+
+
+function removeLoader() {
+  
+loader.style.display="none";
+
+}
+
+window.onload=()=>{
+  setTimeout(()=>{
+    removeLoader()
+    container.style.display='block'
+    container.style.opacity='1'
+  },500);
+  
+}
+
+
