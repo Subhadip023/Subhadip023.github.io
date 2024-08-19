@@ -3,6 +3,27 @@ const container = document.querySelector(".container");
 const lists = document.querySelectorAll("nav ul");
 const tabs = document.querySelectorAll("nav ul li");
 const loader=document.getElementById('loader');
+const shortDesc=document.getElementById('shortDesc');
+const navbarLinks=document.querySelectorAll('.navbarLink a')
+
+// console.log(navbarLinks)
+
+for (let i = 0; i < navbarLinks.length; i++) {
+navbarLinks[i].addEventListener("click",()=>{
+  let current = document.getElementsByClassName("active");
+  current[0].className='';
+  navbarLinks[i].className+='active'
+
+}) 
+}
+
+function active(n) {
+    let current = document.getElementsByClassName("active");
+    current[0].className='';
+    navbarLinks[n].className+='active'
+  
+   
+}
 
 manuElement.addEventListener("click", function() {
   lists.forEach(function(list) {
@@ -28,6 +49,7 @@ manuElement.addEventListener("click", function() {
 
 tabs.forEach(function(tab) {
   tab.addEventListener("click", function() {
+      
    if (window.innerWidth<=800){
     lists.forEach(function(list) {
       list.style.display = "none";
@@ -40,6 +62,8 @@ tabs.forEach(function(tab) {
       </g>
     </svg>`;
     });   }
+
+
   });
 });
 
@@ -47,8 +71,20 @@ tabs.forEach(function(tab) {
 function removeLoader() {
   
 loader.style.display="none";
+document.body.style.opacity='1'
+
+
 
 }
+function showLoader() {
+  
+loader.style.display="block";
+// container.style.display='none'
+
+container.style.opacity='0'
+
+}
+
 
 window.onload=()=>{
   setTimeout(()=>{
@@ -59,4 +95,15 @@ window.onload=()=>{
   
 }
 
+const shortDescText=shortDesc.innerHTML.trim().split(' ')
+// console.log(shortDescText)
+shortDesc.innerHTML=''
+shortDescText.forEach((text)=>{
+  const span=document.createElement('span')
+  span.classList.add('hover-color-chnage')
+  span.innerText=text+' ';
+  
+  shortDesc.appendChild(span)
+
+})
 

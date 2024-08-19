@@ -27,16 +27,16 @@
 
       <div class="links">
         <ul>
-          <li>
-            <a href="/">Home</a>
+          <li class="navbarLink">
+            <a class="active" href="/">Home</a>
           </li>
-          <li>
+          <li class="navbarLink">
             <a href="#project">Projects</a>
           </li>
-          <li>
+          <li class="navbarLink">
             <a href="#about">About</a>
           </li>
-          <li>
+          <li class="navbarLink">
             <a href="#contact">Contact</a>
           </li>
         </ul>
@@ -67,7 +67,7 @@
 
 
       <div class="pic">
-        <img src="./assets/profile_pic.jpeg" alt="">
+        <img src="./assets/profile_pic2.o.png" alt="">
       </div>
       <div class="left">
         <div class="heading">
@@ -83,15 +83,13 @@
 
 
         </div>
-        <div class="short-desc">
-          Aspiring Digital Technology Analyst with a strong foundation in electronics
-          communication engineering and practical experience in machine learning and
-          full-stack web development.
+        <div id="shortDesc" class="short-desc">   
+          Aspiring Digital Technology Analyst with a strong foundation in electronics communication engineering and practical experience in machine learning and full-stack web development.
         </div>
         <div class="home-btns">
-          <a href="#about"> <button class="btn-primary">About</button>
+          <a href="#about"> <button onclick="active(2)" id="about_btn" class="btn-primary">About</button>
           </a>
-          <a href="#project"> <button class="btn-secondery">Projects</button>
+          <a onclick="active(1)" href="#project"> <button class="btn-secondery">Projects</button>
           </a>
         </div>
         <div class="social_svgs">
@@ -267,8 +265,6 @@
 
       <!-- <p>I am excited about the opportunity to bring my skills and enthusiasm to a dynamic environment like TCS Digital. I am eager to contribute to innovative projects and continue my professional growth within a company that values technological excellence and innovation.</p> -->
     </div>
-
-
     <div class="container project full-page" style="display: none;">
       <h2 style="color: red;"> ----Woring on this ----
       </h2>

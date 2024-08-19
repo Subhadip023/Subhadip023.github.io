@@ -45,6 +45,13 @@ nav {
   color: var(--color3);
 }
 
+.navbar ul li a.active {
+
+  text-decoration: underline;
+
+  color: var(--color3);
+}
+
 .navbar svg {
   display: none;
 }
@@ -62,6 +69,7 @@ nav {
   /* background: #000; */
   display: flex;
   flex-wrap: wrap;
+  animation: pupup .3s ease-in-out;
 }
 
 .left{
@@ -91,15 +99,15 @@ nav {
   border-radius: 15px;
 }
 .heading {
-  font-size: 50px;
+  font-size: 45px;
   color: var(--color1);
   /* background: #000; */
 }
 
 .dynamic {
-  padding-left: 20px;
+  padding-left: 5px;
   /* background: #000; */
-  font-size: 50px;
+  font-size: 45px;
   overflow: hidden;
   height: 70px;
   line-height: 60px;
@@ -115,6 +123,7 @@ nav {
 
 .home-btns{
   /* background: #000; */
+  margin: 15px 0;
   height: 50px;
   width: 80%;
   display: flex;
