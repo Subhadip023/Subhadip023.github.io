@@ -11,16 +11,15 @@ nav {
 .title{
   font-size: 20px;
   font-weight: 700;
-  color: var(--main-bg-color);
 }
 
 .title:hover{
   font-size: 20px;
   font-weight: 300;
-  color: var(--color3);
+  color: var(--color2);
 }
 .navbar {
-  background: var(--color2);
+  background: var(--color1);
   position: fixed;
   top: 0;
   left: 0;
@@ -36,20 +35,20 @@ nav {
 }
 .navbar ul li a {
   text-decoration: none;
-  color: var(--main-bg-color);
+  color: var(--color3);
   font-size: 20px;
 }
 .navbar ul li a:hover {
   text-decoration: underline;
 
-  color: var(--color3);
+  color: var(--color2);
 }
 
 .navbar ul li a.active {
 
   text-decoration: underline;
 
-  color: var(--color3);
+  color: var(--color2);
 }
 
 .navbar svg {
@@ -81,22 +80,26 @@ nav {
   width: 70%;
   height: 41vh;
   margin-left: 20px;
+  margin-top: 2rem;
 }
 .pic{
   height: 40vh;
-  width: 15vw;
+ 
  
 }
 .pic img:hover{
 
-  border-radius: 20px;
+
+  border-color: var(--color3);
 }
 
 .pic img{
   height: 100%;
   width: 100%;
   border: 5px solid var(--color2);
-  border-radius: 15px;
+  border-radius: 50%;
+  transition: all 300ms ease-in-out;
+
 }
 .heading {
   font-size: 45px;
@@ -148,12 +151,13 @@ font-size: 20px;
 .social_svgs svg {
   /* background:red; */
   display: flex;
-  fill: var(--color1);
+  fill: var(--color3);
   height: 40px;
   width: 40px;
+  transition: all 200ms linear;
 }
 .social_svgs svg:hover {
-  fill: var(--color3);
+  fill: var(--color2);
 }
 
 @keyframes slide {
@@ -271,7 +275,7 @@ scale: 1.1;
   /* background: greenyellow; */
   width: 95%;
   font-size: 20px;
-  color: var(--color1);
+  color: var(--color3);
   text-align: justify;
 }
 
@@ -319,7 +323,7 @@ scale: 1.1;
 
 .about{
   height: fit-content;
-  color: var(--color1);
+  color: var(--color3);
   text-align: justify;
 }
 
@@ -340,7 +344,7 @@ scale: 1.1;
 
 
 .contact{
-  color: var(--color1);
+  color: var(--color3);
   font-size: 30px;
 }
 
