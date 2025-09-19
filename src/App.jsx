@@ -1,12 +1,13 @@
 import { useState } from 'react'
+import { Outlet } from 'react-router-dom'
 
 
 function App() {
 
   return (
-    <div className="m-5 mt-10 text-3xl font-bold underline bg-amber-500">
-    This is a Vite + React + Tailwindcss project this on mantanece mode.
-    </div>
+   <>
+   <Outlet />
+   </>
   )
 }
 
