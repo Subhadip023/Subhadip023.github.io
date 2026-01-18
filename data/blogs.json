@@ -1,1 +1,72 @@
-[{"id":1768731430352,"title":"What is machine learnig","description":"<p>machine learning is away to learnig </p>","image":null,"created_at":"2026-01-18T10:17:10.352Z"}]
+[
+  {
+    "id": 1768731430351,
+    "title": "What is Machine Learning",
+    "description": "<p>Machine Learning is a subset of Artificial Intelligence that allows systems to learn from data and improve automatically without being explicitly programmed.</p><ul><li>Supervised Learning</li><li>Unsupervised Learning</li><li>Reinforcement Learning</li></ul><img src=\"https://images.unsplash.com/photo-1581092919534-09f15b64b0d4\" style=\"max-width:100%; border-radius:8px; margin:12px 0;\" />",
+    "image": "https://images.unsplash.com/photo-1581092919534-09f15b64b0d4",
+    "created_at": "2026-01-18T10:17:10.352Z"
+  },
+  {
+    "id": 1768731430352,
+    "title": "How to Learn Data Structures & Algorithms",
+    "description": "<p>Data Structures and Algorithms form the core of efficient programming and problem solving.</p><ul><li>Start with arrays and strings</li><li>Learn stacks, queues, and linked lists</li><li>Practice sorting and searching algorithms</li></ul><img src=\"https://images.unsplash.com/photo-1515879218367-8466d910aaa4\" style=\"max-width:100%; border-radius:8px; margin:12px 0;\" />",
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    "created_at": "2026-01-18T10:17:10.352Z"
+  },
+  {
+    "id": 1768731430353,
+    "title": "Introduction to Web Development",
+    "description": "<p>Web development involves creating websites and web applications using frontend and backend technologies.</p><ul><li>HTML, CSS, JavaScript</li><li>Frontend frameworks</li><li>Backend and databases</li></ul><img src=\"https://images.unsplash.com/photo-1522202176988-66273c2fd55f\" style=\"max-width:100%; border-radius:8px; margin:12px 0;\" />",
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    "created_at": "2026-01-18T10:17:10.352Z"
+  },
+  {
+    "id": 1768731430354,
+    "title": "Basics of JavaScript",
+    "description": "<p>JavaScript is the language of the web used to create interactive and dynamic user experiences.</p><ul><li>Variables and functions</li><li>DOM manipulation</li><li>Events and APIs</li></ul><img src=\"https://images.unsplash.com/photo-1555066931-4365d14bab8c\" style=\"max-width:100%; border-radius:8px; margin:12px 0;\" />",
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "created_at": "2026-01-18T10:17:10.352Z"
+  },
+  {
+    "id": 1768731430355,
+    "title": "Understanding Databases",
+    "description": "<p>Databases store and manage data efficiently for applications.</p><ul><li>SQL vs NoSQL</li><li>CRUD operations</li><li>Indexes and relationships</li></ul><img src=\"https://images.unsplash.com/photo-1544383835-bda2bc66a55d\" style=\"max-width:100%; border-radius:8px; margin:12px 0;\" />",
+    "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d",
+    "created_at": "2026-01-18T10:17:10.352Z"
+  },
+  {
+    "id": 1768731430356,
+    "title": "Introduction to Git & GitHub",
+    "description": "<p>Git is a version control system that helps track changes in code and collaborate with teams.</p><ul><li>Repositories and commits</li><li>Branches and merging</li><li>Working with GitHub</li></ul><img src=\"https://images.unsplash.com/photo-1618401471353-b98afee0b2eb\" style=\"max-width:100%; border-radius:8px; margin:12px 0;\" />",
+    "image": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb",
+    "created_at": "2026-01-18T10:17:10.352Z"
+  },
+  {
+    "id": 1768731430357,
+    "title": "Basics of Python Programming",
+    "description": "<p>Python is a beginner-friendly programming language used in web, data science, and automation.</p><ul><li>Variables and data types</li><li>Loops and conditions</li><li>Functions and modules</li></ul><img src=\"https://images.unsplash.com/photo-1526378722484-d92d63f7f8f0\" style=\"max-width:100%; border-radius:8px; margin:12px 0;\" />",
+    "image": "https://images.unsplash.com/photo-1526378722484-d92d63f7f8f0",
+    "created_at": "2026-01-18T10:17:10.352Z"
+  },
+  {
+    "id": 1768731430358,
+    "title": "Object-Oriented Programming Concepts",
+    "description": "<p>Object-Oriented Programming (OOP) helps organize code using classes and objects.</p><ul><li>Encapsulation</li><li>Inheritance</li><li>Polymorphism</li></ul><img src=\"https://images.unsplash.com/photo-1518770660439-4636190af475\" style=\"max-width:100%; border-radius:8px; margin:12px 0;\" />",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    "created_at": "2026-01-18T10:17:10.352Z"
+  },
+  {
+    "id": 1768731430359,
+    "title": "Introduction to APIs",
+    "description": "<p>APIs allow different software systems to communicate with each other.</p><ul><li>REST APIs</li><li>HTTP methods</li><li>JSON data format</li></ul><img src=\"https://images.unsplash.com/photo-1558494949-ef010cbdcc31\" style=\"max-width:100%; border-radius:8px; margin:12px 0;\" />",
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "created_at": "2026-01-18T10:17:10.352Z"
+  },
+  {
+    "id": 1768731430360,
+    "title": "Introduction to Cloud Computing",
+    "description": "<p>Cloud computing delivers computing services like storage and servers over the internet.</p><ul><li>IaaS, PaaS, SaaS</li><li>Scalability</li><li>Cloud security basics</li></ul><img src=\"https://images.unsplash.com/photo-1451187580459-43490279c0fa\" style=\"max-width:100%; border-radius:8px; margin:12px 0;\" />",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
+    "created_at": "2026-01-18T10:17:10.352Z"
+  }
+]
