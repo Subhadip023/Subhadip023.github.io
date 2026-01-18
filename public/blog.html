@@ -226,6 +226,7 @@ function renderBlogs(blogs) {
               ` 
                 <div class="p-4 md:w-1/3">
                   <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                    ${blog.thumbnail ? `<img class="lg:h-48 md:h-36 w-full object-cover object-center" src="${imageUrl(blog.thumbnail)}" alt="blog">` : `<img class="lg:h-48 md:h-36 w-full object-cover object-center" src="${blog.thumbnail_url}" alt="blog">`}
                     <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="${blog.image}" alt="blog">
                     <div class="p-6">
                       <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">${blog.category || 'Category'}</h2>
