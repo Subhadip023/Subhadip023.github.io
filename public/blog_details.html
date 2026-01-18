@@ -35,7 +35,7 @@
             d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
         </svg> <span class="ml-3 text-xl">Chakraborty</span>
       </a>
-      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center " >
         <a class="mr-5 hover:text-gray-900 " href="/">Home</a>
         <a class="mr-5 hover:text-gray-900" href="./public/blog.html">Blog</a>
         <!-- <a class="mr-5 hover:text-gray-900">Third Link</a>
@@ -131,11 +131,11 @@ async function fetchSinglePost(DOCUMENT_ID) {
 
   let html = `<section class="text-gray-600 body-font">
   <div class="container mx-auto flex px-5 py-24 items-center justify-left flex-col">
-    <img class=" mb-10 object-cover object-left rounded" alt="${data.title}" src="${data.thumbnail==null? data.thumbnail_url : data.thumbnail}">
+    <img class=" lg:w-2/3 w-full mb-10 object-cover object-left rounded" alt="${data.title}" src="${data.thumbnail==null? data.thumbnail_url : data.thumbnail}">
     <div class="text-justify lg:w-2/3 w-full">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">${data.title}</h1>
       ${data.description}
-      <div class="flex justify-center">
+      <div class="flex justify-center mt-5">
         <a href="/" class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Home</a>
         <a href="../public/blog.html" class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Blogs</a>
       </div>
