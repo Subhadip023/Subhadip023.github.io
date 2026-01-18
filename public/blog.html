@@ -229,8 +229,8 @@ function renderBlogs(blogs) {
                     ${blog.thumbnail ? `<img class="lg:h-48 md:h-36 w-full object-cover object-center" src="${imageUrl(blog.thumbnail)}" alt="blog">` : `<img class="lg:h-48 md:h-36 w-full object-cover object-center" src="${blog.thumbnail_url}" alt="blog">`}
                     <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="${blog.image}" alt="blog">
                     <div class="p-6">
-                      <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">${blog.category || 'Category'}</h2>
-                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">${blog.created_at}</h1>
+                      <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">${blog.category || 'Tech'}</h2>
+                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">${blog.$createdAt}</h1>
                       <p class="leading-relaxed mb-3">${blog.title}</p>
                       <div class="flex items-center flex-wrap ">
                         <a href="javascript:void(0);" onclick="loadBlogDetails(${blog.id})" class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
