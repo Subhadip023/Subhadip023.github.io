@@ -1,81 +1,81 @@
 [
   {
     "id": 1768731430351,
-    "title": "What is Machine Learning",
-    "category" : "Tech",
-    "description": "<p>Machine Learning is a subset of Artificial Intelligence that allows systems to learn from data and improve automatically without being explicitly programmed.</p><ul><li>Supervised Learning</li><li>Unsupervised Learning</li><li>Reinforcement Learning</li></ul><img src=\"https://images.unsplash.com/photo-1581092919534-09f15b64b0d4\" style=\"max-width:100%; border-radius:8px; margin:12px 0;\" />",
-    "image": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFjaGluZSUyMGxlYXJuaW5nfGVufDB8fDB8fHww",
+    "title": "What is Machine Learning: A Deep Dive",
+    "category": "Tech",
+    "description": "<h3>The Architectural Shift from Programming to Learning</h3><p>Machine Learning (ML) is no longer a futuristic concept; it is the backbone of the modern digital economy. Unlike traditional software engineering, where developers write explicit 'if-then' logic, ML involves building mathematical models that identify latent patterns within vast datasets. This allows systems to make autonomous decisions, predict market trends, and understand human language with human-like nuance. As we move into the era of Big Data, ML serves as the primary tool for turning raw information into actionable intelligence.</p><h4>Core Methodologies in Modern ML</h4><ul><li><strong>Supervised Learning:</strong> The most common form of ML, where models are trained on labeled data. This is used for classification (e.g., spam detection) and regression (e.g., predicting housing prices).</li><li><strong>Unsupervised Learning:</strong> Here, the model finds hidden patterns in unlabeled data. It is essential for customer segmentation, anomaly detection in cybersecurity, and genomic sequencing.</li><li><strong>Deep Learning & Neural Networks:</strong> A subset of ML inspired by the biological brain. By stacking layers of 'neurons,' these models can process unstructured data like images, video, and audio, power tools like ChatGPT and Midjourney.</li></ul><h4>Real-World Impact</h4><p>From healthcare professionals using ML to predict early-stage diseases to financial institutions detecting fraudulent transactions in milliseconds, the applications are limitless. Understanding ML is now a requirement for anyone looking to lead in the tech space.</p>",
+    "image": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=500&auto=format&fit=crop&q=60",
     "created_at": "2026-01-18T10:17:10.352Z"
   },
   {
     "id": 1768731430352,
-    "title": "How to Learn Data Structures & Algorithms",
-    "category" : "Tech",
-    "description": "<p>Data Structures and Algorithms form the core of efficient programming and problem solving.</p><ul><li>Start with arrays and strings</li><li>Learn stacks, queues, and linked lists</li><li>Practice sorting and searching algorithms</li></ul><img src=\"https://images.unsplash.com/photo-1515879218367-8466d910aaa4\" style=\"max-width:100%; border-radius:8px; margin:12px 0;\" />",
+    "title": "Mastering Data Structures & Algorithms (DSA)",
+    "category": "Tech",
+    "description": "<h3>The Science of Efficient Computation</h3><p>Data Structures and Algorithms are the fundamental DNA of software development. Every piece of software, from a simple mobile app to a global search engine, relies on the efficient organization and processing of data. Learning DSA is not just about passing technical interviews; it is about learning how to think like a computer scientist—solving problems with the least amount of time and memory possible.</p><h4>The Building Blocks of Logic</h4><ul><li><strong>Data Organization:</strong> Understanding when to use a Hash Table for O(1) lookups versus a Linked List for frequent insertions is critical. You will explore advanced structures like Heaps, Tries, and Graphs.</li><li><strong>Algorithmic Strategy:</strong> Moving beyond basic loops to master sophisticated techniques like Dynamic Programming (solving problems by breaking them into sub-problems) and Backtracking (used in puzzle solving and optimization).</li><li><strong>Complexity Analysis:</strong> The use of Big O notation to mathematically prove why one solution is superior to another as data scales from thousands to billions of records.</li></ul><h4>Why Professionals Prioritize DSA</h4><p>In a world of high-scale cloud systems, an inefficient algorithm can cost a company thousands of dollars in unnecessary server costs. Mastering DSA ensures your code is scalable, sustainable, and performant.</p>",
     "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
     "created_at": "2026-01-18T10:17:10.352Z"
   },
   {
     "id": 1768731430353,
-    "title": "Introduction to Web Development",
-    "category" : "Tech",
-    "description": "<p>Web development involves creating websites and web applications using frontend and backend technologies.</p><ul><li>HTML, CSS, JavaScript</li><li>Frontend frameworks</li><li>Backend and databases</li></ul><img src=\"https://images.unsplash.com/photo-1522202176988-66273c2fd55f\" style=\"max-width:100%; border-radius:8px; margin:12px 0;\" />",
+    "title": "Introduction to Modern Web Development",
+    "category": "Tech",
+    "description": "<h3>The Full-Stack Ecosystem of 2026</h3><p>Web Development has evolved from static HTML pages into a complex ecosystem of highly interactive, distributed applications. Today's web developers must navigate a landscape that includes frontend frameworks, backend microservices, and sophisticated deployment pipelines. The goal is to create seamless, 'app-like' experiences within a web browser that are accessible to everyone, everywhere.</p><h4>The Three Pillars of the Web</h4><ul><li><strong>Modern Frontend:</strong> It’s no longer just about HTML/CSS. Developers now use reactive frameworks like React, Vue, or Next.js to build 'Single Page Applications' (SPAs) that update content instantly without page reloads.</li><li><strong>Scalable Backend:</strong> The server-side is responsible for the 'heavy lifting'—handling database transactions, security, and business logic using languages like Node.js, Go, or Python.</li><li><strong>DevOps & Deployment:</strong> Modern development involves 'Continuous Integration' (CI/CD), ensuring that every code change is automatically tested and deployed to the cloud via tools like Docker and Kubernetes.</li></ul><h4>Future Trends</h4><p>We are seeing a move toward 'Web3' decentralized applications and 'Edge Computing,' where code runs closer to the user to reduce latency. Staying updated on these trends is vital for any developer.</p>",
     "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
     "created_at": "2026-01-18T10:17:10.352Z"
   },
   {
     "id": 1768731430354,
-    "title": "Basics of JavaScript",
-    "category" : "Tech",
-    "description": "<p>JavaScript is the language of the web used to create interactive and dynamic user experiences.</p><ul><li>Variables and functions</li><li>DOM manipulation</li><li>Events and APIs</li></ul><img src=\"https://images.unsplash.com/photo-1555066931-4365d14bab8c\" style=\"max-width:100%; border-radius:8px; margin:12px 0;\" />",
+    "title": "Basics of JavaScript: The Universal Language",
+    "category": "Tech",
+    "description": "<h3>The Engine of Digital Interactivity</h3><p>JavaScript is arguably the most important programming language in the world today. It is the only language that runs natively in every web browser, and thanks to environments like Node.js, it now runs on servers, robots, and IoT devices as well. JavaScript transforms static documents into living, breathing interfaces that respond to every user movement.</p><h4>Advanced JavaScript Concepts</h4><ul><li><strong>The DOM (Document Object Model):</strong> JavaScript interacts with HTML through the DOM, allowing code to add, remove, or modify elements on the fly based on user input.</li><li><strong>Asynchronous Programming:</strong> Because the web is network-dependent, JavaScript uses an 'Event Loop' to handle data fetching without freezing the user interface, utilizing modern patterns like Promises and Async/Await.</li><li><strong>Functional vs. Object-Oriented:</strong> JavaScript is uniquely flexible, allowing developers to use multiple programming styles (paradigms) depending on the needs of the project.</li></ul><h4>The Modern Developer's Toolkit</h4><p>Mastering Vanilla JavaScript is the first step toward using powerful libraries like Three.js for 3D graphics or D3.js for complex data visualizations.</p>",
     "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
     "created_at": "2026-01-18T10:17:10.352Z"
   },
   {
     "id": 1768731430355,
-    "title": "Understanding Databases",
-    "category" : "Tech",
-    "description": "<p>Databases store and manage data efficiently for applications.</p><ul><li>SQL vs NoSQL</li><li>CRUD operations</li><li>Indexes and relationships</li></ul><img src=\"https://images.unsplash.com/photo-1544383835-bda2bc66a55d\" style=\"max-width:100%; border-radius:8px; margin:12px 0;\" />",
+    "title": "Understanding Modern Database Systems",
+    "category": "Tech",
+    "description": "<h3>The Foundation of Data Persistence</h3><p>Without a database, an application has no memory. Databases are sophisticated systems designed to store, manage, and query data with high levels of security and speed. As the volume of global data explodes, understanding how to choose and optimize the right database has become a mission-critical skill for engineers.</p>[Image comparing SQL table structure vs NoSQL document structure]<h4>Navigating the Database Landscape</h4><ul><li><strong>Relational (SQL):</strong> Using a rigid schema and tables, SQL databases like PostgreSQL are the gold standard for financial systems and applications where data consistency (ACID compliance) is non-negotiable.</li><li><strong>Non-Relational (NoSQL):</strong> Databases like MongoDB or Cassandra offer flexibility and massive horizontal scaling, making them ideal for social media feeds, real-time analytics, and content management.</li><li><strong>Performance Tuning:</strong> Deep dives into indexing, partitioning, and caching (using tools like Redis) to ensure that queries return results in milliseconds, even when dealing with terabytes of data.</li></ul><h4>Data Security and Governance</h4><p>In the modern era, protecting user data via encryption at rest and in transit is a legal requirement. Modern databases provide built-in tools to help developers stay compliant with regulations like GDPR.</p>",
     "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d",
     "created_at": "2026-01-18T10:17:10.352Z"
   },
   {
     "id": 1768731430356,
-    "title": "Introduction to Git & GitHub",
-    "category" : "Tech",
-    "description": "<p>Git is a version control system that helps track changes in code and collaborate with teams.</p><ul><li>Repositories and commits</li><li>Branches and merging</li><li>Working with GitHub</li></ul><img src=\"https://images.unsplash.com/photo-1618401471353-b98afee0b2eb\" style=\"max-width:100%; border-radius:8px; margin:12px 0;\" />",
+    "title": "Git & GitHub: Collaborative Engineering",
+    "category": "Tech",
+    "description": "<h3>The Time Machine for Source Code</h3><p>Software is rarely built by a single person. Git is a distributed version control system that allows hundreds of developers to work on the same codebase simultaneously without overwriting each other's work. GitHub builds on top of Git, providing a collaborative platform that serves as the 'Social Network' for the world's developers.</p><h4>The Professional Git Workflow</h4><ul><li><strong>Branching and Merging:</strong> Developers create 'Feature Branches' to experiment with new code safely. Once tested, these are 'merged' back into the main project.</li><li><strong>Pull Requests and Code Review:</strong> GitHub enables teams to review every line of code before it goes live, ensuring quality and mentoring junior developers.</li><li><strong>Version History:</strong> Git provides a permanent record of every change ever made, allowing teams to 'roll back' to a previous version instantly if a critical bug is discovered.</li></ul><h4>Open Source and the Global Community</h4><p>By using GitHub, you gain access to millions of open-source projects, allowing you to contribute to the software that powers the world, from the Linux kernel to the React library.</p>",
     "image": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb",
     "created_at": "2026-01-18T10:17:10.352Z"
   },
   {
     "id": 1768731430357,
-    "title": "Basics of Python Programming",
-    "category" : "Tech",
-    "description": "<p>Python is a beginner-friendly programming language used in web, data science, and automation.</p><ul><li>Variables and data types</li><li>Loops and conditions</li><li>Functions and modules</li></ul><img src=\"https://images.unsplash.com/photo-1526378722484-d92d63f7f8f0\" style=\" border-radius:8px; margin:12px 0;\" />",
+    "title": "Python: The King of Versatility",
+    "category": "Tech",
+    "description": "<h3>From Scripting to Supercomputing</h3><p>Python's rise to become the world's most popular programming language is no accident. Its syntax is incredibly close to human language, making it accessible to beginners, yet it is powerful enough to run the algorithms at NASA and the recommendation engines at YouTube. It is the 'Swiss Army Knife' of the tech world.</p><h4>The Python Ecosystem</h4><ul><li><strong>Data Science & AI:</strong> With libraries like Pandas, Scikit-Learn, and TensorFlow, Python is the undisputed leader for data analysis and machine learning.</li><li><strong>Automation and Scripting:</strong> Python excels at automating repetitive tasks, such as web scraping, file management, and automated testing, saving developers hundreds of hours.</li><li><strong>Web Frameworks:</strong> Django and Flask allow developers to build secure, scalable web backends rapidly, following the 'batteries-included' philosophy.</li></ul><h4>Why Start with Python?</h4><p>Because Python handles many complex computer management tasks (like memory management) automatically, it allows developers to focus on solving problems rather than fighting with the language itself.</p>",
     "image": "https://images.unsplash.com/photo-1526378722484-d92d63f7f8f0",
     "created_at": "2026-01-18T10:17:10.352Z"
   },
   {
     "id": 1768731430358,
-    "title": "Object-Oriented Programming Concepts",
-    "category" : "Tech",
-    "description": "<p>Object-Oriented Programming (OOP) helps organize code using classes and objects.</p><ul><li>Encapsulation</li><li>Inheritance</li><li>Polymorphism</li></ul><img src=\"https://images.unsplash.com/photo-1518770660439-4636190af475\" style=\"max-width:100%; border-radius:8px; margin:12px 0;\" />",
+    "title": "Object-Oriented Programming (OOP)",
+    "category": "Tech",
+    "description": "<h3>Structuring Complex Software Systems</h3><p>Object-Oriented Programming (OOP) is a design philosophy that organizes software around 'data' or 'objects' rather than functions and logic. By modeling software after real-world entities (like 'User', 'Product', or 'Order'), developers can create code that is intuitive, modular, and extremely easy to scale.</p>[Image illustrating OOP concepts: Encapsulation, Inheritance, and Polymorphism]<h4>The Four Pillars of OOP</h4><ul><li><strong>Encapsulation:</strong> Hiding the internal state of an object and only allowing interaction through a well-defined interface. This prevents accidental data corruption.</li><li><strong>Inheritance:</strong> Creating a hierarchy where a 'Child' class inherits the traits of a 'Parent' class, drastically reducing code duplication.</li><li><strong>Polymorphism:</strong> The ability for different objects to respond to the same command in their own unique way (e.g., a 'Circle' and 'Square' both have a 'Draw' method, but they behave differently).</li><li><strong>Abstraction:</strong> Simplifying complex systems by breaking them into smaller, more manageable components.</li></ul><h4>Impact on Modern Architecture</h4><p>OOP is the foundation of languages like Java, C#, and C++, and it remains the primary way that enterprise-grade software is designed today.</p>",
     "image": "https://images.unsplash.com/photo-1518770660439-4636190af475",
     "created_at": "2026-01-18T10:17:10.352Z"
   },
   {
     "id": 1768731430359,
-    "title": "Introduction to APIs",
-    "category" : "Tech",
-    "description": "<p>APIs allow different software systems to communicate with each other.</p><ul><li>REST APIs</li><li>HTTP methods</li><li>JSON data format</li></ul><img src=\"https://images.unsplash.com/photo-1558494949-ef010cbdcc31\" style=\"max-width:100%; border-radius:8px; margin:12px 0;\" />",
+    "title": "Introduction to APIs: Connecting the World",
+    "category": "Tech",
+    "description": "<h3>The Digital Connective Tissue</h3><p>An API (Application Programming Interface) is a set of rules that allow one piece of software to talk to another. In the modern world, no application is an island; apps need to talk to payment processors (Stripe), map services (Google Maps), and social media platforms. APIs are what make this interconnected digital world possible.</p><h4>How Modern APIs Function</h4><ul><li><strong>RESTful Services:</strong> Representational State Transfer (REST) is the standard architectural style for web APIs, using standard HTTP methods like GET, POST, PUT, and DELETE to manage data.</li><li><strong>JSON Data Exchange:</strong> Most modern APIs use JSON (JavaScript Object Notation), a lightweight, text-based format that is easy for humans to read and for machines to parse.</li><li><strong>API Security:</strong> Understanding how to secure these gateways using API Keys, OAuth2, and rate-limiting to prevent abuse and data breaches.</li></ul><h4>The Rise of the API Economy</h4><p>Companies like Twilio and Stripe have built multi-billion dollar businesses solely by providing APIs that other developers integrate into their own products, proving that the API is the product of the future.</p>",
     "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
     "created_at": "2026-01-18T10:17:10.352Z"
   },
   {
     "id": 1768731430360,
     "title": "Introduction to Cloud Computing",
-    "category" : "Tech",
-    "description": "<p>Cloud computing delivers computing services like storage and servers over the internet.</p><ul><li>IaaS, PaaS, SaaS</li><li>Scalability</li><li>Cloud security basics</li></ul><img src=\"https://images.unsplash.com/photo-1451187580459-43490279c0fa\" style=\"max-width:100%; border-radius:8px; margin:12px 0;\" />",
+    "category": "Tech",
+    "description": "<h3>The Virtualization of Everything</h3><p>Cloud Computing has fundamentally changed how businesses operate. Instead of owning and maintaining physical data centers and servers, companies now rent access to storage, databases, and computing power from providers like AWS, Microsoft Azure, and Google Cloud. This shift from 'Capital Expenditure' to 'Operating Expenditure' has democratized access to high-performance computing.</p><h4>Key Cloud Concepts</h4><ul><li><strong>Service Models (IaaS, PaaS, SaaS):</strong> Whether you need raw virtual machines (IaaS), a platform to deploy code (PaaS), or finished software (SaaS), the cloud provides a layer of abstraction for every need.</li><li><strong>Serverless Architecture:</strong> A revolutionary concept where developers write code and the cloud provider handles all the scaling and server management. You only pay for the milliseconds your code runs.</li><li><strong>Global Scalability:</strong> The ability to deploy your application to data centers around the world in seconds, ensuring low latency for a global user base.</li></ul><h4>The Hybrid and Multi-Cloud Future</h4><p>Modern enterprises are now moving toward 'Hybrid' models, combining private servers with public cloud resources to maximize security and cost-efficiency.</p>",
     "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
     "created_at": "2026-01-18T10:17:10.352Z"
   }
