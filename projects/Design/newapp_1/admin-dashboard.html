@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsly — Admin Dashboard</title>
+    <meta name="description" content="Admin overview for Newsly multi-page news app." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { brand: { 500: '#5164ff', 400: '#7c8fff' } }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-50">
+    <a class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-brand-500 text-white px-3 py-2 rounded-md" href="#main">Skip to content</a>
+
+    <header class="sticky top-0 z-30 backdrop-blur bg-slate-950/90 border-b border-white/5">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-3">
+        <a class="flex items-center gap-2 text-lg font-semibold" href="./index.html">
+          <img src="./assets/logo.svg" alt="Newsly logo" class="h-6 w-6" />
+          <span>Newsly Admin</span>
+        </a>
+        <div class="flex items-center gap-2">
+          <button id="themeBtn" class="px-3 py-2 rounded-lg border border-white/10 hover:border-white/30 text-sm" type="button">Theme</button>
+          <button class="md:hidden p-2 rounded-lg border border-white/10 hover:border-white/20" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav" type="button">
+            <span class="block h-[2px] w-5 bg-white mb-1"></span>
+            <span class="block h-[2px] w-5 bg-white"></span>
+          </button>
+          <nav id="nav" class="hidden md:flex items-center gap-6 text-sm text-slate-200">
+            <a class="hover:text-white" href="./admin-dashboard.html">Dashboard</a>
+            <a class="hover:text-white" href="./admin-articles.html">Articles</a>
+            <a class="hover:text-white" href="./index.html">Site</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="max-w-6xl mx-auto px-4 sm:px-6 py-10 space-y-10">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div>
+          <p class="text-sm text-slate-300">Admin</p>
+          <h1 class="text-3xl font-semibold">Editorial overview</h1>
+        </div>
+        <div class="flex gap-3">
+          <a class="px-4 py-2 rounded-lg border border-white/10 hover:border-white/30 text-sm" href="./admin-articles.html">Manage articles</a>
+          <a class="px-4 py-2 rounded-lg bg-brand-500 hover:bg-brand-400 text-sm font-semibold text-white" href="./admin-articles.html#new">New article</a>
+        </div>
+      </div>
+
+      <section class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+          <p class="text-sm text-slate-300">Published</p>
+          <div class="text-3xl font-semibold">482</div>
+          <p class="text-xs text-emerald-300 mt-1">+12 this week</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+          <p class="text-sm text-slate-300">Drafts</p>
+          <div class="text-3xl font-semibold">34</div>
+          <p class="text-xs text-amber-300 mt-1">Needs review</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+          <p class="text-sm text-slate-300">Scheduled</p>
+          <div class="text-3xl font-semibold">18</div>
+          <p class="text-xs text-slate-300 mt-1">Next 24h</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+          <p class="text-sm text-slate-300">Editors online</p>
+          <div class="text-3xl font-semibold">7</div>
+          <p class="text-xs text-emerald-300 mt-1">Live</p>
+        </div>
+      </section>
+
+      <section class="grid lg:grid-cols-[1.1fr_0.9fr] gap-4">
+        <div class="rounded-xl border border-white/10 bg-white/5 p-5 space-y-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-lg font-semibold">Performance</h2>
+            <span class="text-xs text-slate-300">Last 7 days</span>
+          </div>
+          <div class="h-48 rounded-lg bg-gradient-to-br from-brand-500/20 via-emerald-400/10 to-cyan-400/15"></div>
+          <ul class="text-sm text-slate-200 space-y-1">
+            <li>— Sessions up 14% driven by newsletter traffic.</li>
+            <li>— Engagement steady; average time on page 4m12s.</li>
+          </ul>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-white/5 p-5 space-y-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-lg font-semibold">Tasks</h2>
+            <span class="text-xs text-slate-300">Today</span>
+          </div>
+          <ul class="space-y-2 text-sm text-slate-100">
+            <li class="flex items-center gap-3"><span class="h-2 w-2 rounded-full bg-emerald-400"></span>Approve three feature drafts</li>
+            <li class="flex items-center gap-3"><span class="h-2 w-2 rounded-full bg-amber-300"></span>Prep Q&A for climate series</li>
+            <li class="flex items-center gap-3"><span class="h-2 w-2 rounded-full bg-sky-300"></span>Schedule push notification copy</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="rounded-xl border border-white/10 bg-white/5 p-5 space-y-4">
+        <div class="flex items-center justify-between">
+          <h2 class="text-lg font-semibold">Recent submissions</h2>
+          <a class="text-sm text-brand-200 hover:text-brand-100" href="./admin-articles.html">Open queue</a>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead class="text-slate-300">
+              <tr class="text-left">
+                <th class="py-2">Title</th>
+                <th class="py-2">Section</th>
+                <th class="py-2">Author</th>
+                <th class="py-2">Status</th>
+                <th class="py-2">Action</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-white/5">
+              <tr>
+                <td class="py-2">EV battery breakthrough</td>
+                <td class="py-2">Tech</td>
+                <td class="py-2">A. Patel</td>
+                <td class="py-2"><span class="px-2 py-1 rounded-full bg-emerald-500/20 text-emerald-200 text-xs">Ready</span></td>
+                <td class="py-2"><a class="text-brand-200 hover:text-brand-100" href="./admin-articles.html">Edit</a></td>
+              </tr>
+              <tr>
+                <td class="py-2">Coastal cities adapt</td>
+                <td class="py-2">Climate</td>
+                <td class="py-2">N. Liu</td>
+                <td class="py-2"><span class="px-2 py-1 rounded-full bg-amber-500/20 text-amber-200 text-xs">Review</span></td>
+                <td class="py-2"><a class="text-brand-200 hover:text-brand-100" href="./admin-articles.html">Edit</a></td>
+              </tr>
+              <tr>
+                <td class="py-2">Streaming bundles return</td>
+                <td class="py-2">Culture</td>
+                <td class="py-2">J. Reed</td>
+                <td class="py-2"><span class="px-2 py-1 rounded-full bg-slate-500/20 text-slate-200 text-xs">Draft</span></td>
+                <td class="py-2"><a class="text-brand-200 hover:text-brand-100" href="./admin-articles.html">Edit</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-10 border-t border-white/5">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+        <p>© <span id="year"></span> Newsly.</p>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-white" href="./index.html">Site</a>
+          <a class="hover:text-white" href="./admin-articles.html">Articles</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+

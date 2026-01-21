@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aster — Minimal Portfolio</title>
+    <meta name="description" content="Clean, single-page portfolio template with Tailwind CDN." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: '#0b1221',
+              accent: '#f59e0b'
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-ink text-slate-50">
+    <header class="max-w-5xl mx-auto px-5 py-6 flex items-center justify-between gap-3">
+      <a class="font-semibold text-lg flex items-center gap-2" href="#">
+        <span class="h-2.5 w-8 rounded-full bg-gradient-to-r from-amber-400 to-rose-400"></span>
+        Aster
+      </a>
+      <div class="flex items-center gap-2">
+        <button id="themeBtn" class="px-3 py-2 rounded-lg border border-white/10 hover:border-white/30 text-sm" type="button">Theme</button>
+        <nav class="hidden sm:flex gap-5 text-sm text-slate-200">
+          <a class="hover:text-white" href="#work">Work</a>
+          <a class="hover:text-white" href="#about">About</a>
+          <a class="hover:text-white" href="#contact">Contact</a>
+        </nav>
+        <button class="sm:hidden p-2 rounded-lg border border-white/10" id="menuBtn" aria-expanded="false" aria-controls="nav" type="button">Menu</button>
+      </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-5 space-y-16 pb-16" id="main">
+      <section class="grid md:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
+        <div class="space-y-5">
+          <p class="text-sm uppercase tracking-[0.25em] text-amber-300">Designer / Developer</p>
+          <h1 class="text-4xl sm:text-5xl font-semibold leading-tight">I help brands ship fast, beautiful experiences.</h1>
+          <p class="text-slate-300 text-lg">
+            A minimal portfolio scaffold: hero, work grid, about, and contact CTA. Tailwind via CDN—ready to deploy.
+          </p>
+          <div class="flex gap-3">
+            <a class="px-5 py-3 rounded-lg bg-white text-ink font-semibold" href="#work">View work</a>
+            <a class="px-5 py-3 rounded-lg border border-white/10 text-slate-100" href="#contact">Book a call</a>
+          </div>
+        </div>
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-6 space-y-3 shadow-2xl">
+          <div class="text-sm text-slate-200">Recent highlights</div>
+          <div class="space-y-3">
+            <div class="rounded-xl bg-white/5 p-4 border border-white/5">
+              <div class="text-sm text-amber-200">SaaS UI kit</div>
+              <div class="text-lg font-semibold">Shipped design system in 3 weeks</div>
+            </div>
+            <div class="rounded-xl bg-white/5 p-4 border border-white/5">
+              <div class="text-sm text-amber-200">Ecommerce</div>
+              <div class="text-lg font-semibold">+28% checkout conversion</div>
+            </div>
+            <div class="rounded-xl bg-white/5 p-4 border border-white/5">
+              <div class="text-sm text-amber-200">Brand site</div>
+              <div class="text-lg font-semibold">Story-led microsite in 48h</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="space-y-6" id="work">
+        <div class="flex items-center justify-between">
+          <h2 class="text-2xl font-semibold">Selected work</h2>
+          <span class="text-sm text-slate-400">Filtered to 6 projects</span>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <article class="group rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+            <div class="h-40 bg-gradient-to-br from-amber-400/30 via-rose-400/20 to-purple-500/25"></div>
+            <div class="p-4 space-y-2">
+              <div class="flex items-center justify-between text-sm text-slate-400">
+                <span>2025 • Product</span><span>UI/UX</span>
+              </div>
+              <h3 class="text-xl font-semibold">Insight CRM</h3>
+              <p class="text-slate-300 text-sm">Dashboard for B2B sales teams with live metrics.</p>
+            </div>
+          </article>
+          <article class="group rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+            <div class="h-40 bg-gradient-to-br from-sky-400/30 via-emerald-400/25 to-amber-300/20"></div>
+            <div class="p-4 space-y-2">
+              <div class="flex items-center justify-between text-sm text-slate-400">
+                <span>2024 • Web</span><span>Design + Build</span>
+              </div>
+              <h3 class="text-xl font-semibold">Paper Studio</h3>
+              <p class="text-slate-300 text-sm">Brand site with editorial storytelling and shop.</p>
+            </div>
+          </article>
+          <article class="group rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+            <div class="h-40 bg-gradient-to-br from-emerald-400/25 via-teal-400/25 to-amber-200/30"></div>
+            <div class="p-4 space-y-2">
+              <div class="flex items-center justify-between text-sm text-slate-400">
+                <span>2024 • Mobile</span><span>Product</span>
+              </div>
+              <h3 class="text-xl font-semibold">Habitat</h3>
+              <p class="text-slate-300 text-sm">Habit tracker with streaks, insights, and reminders.</p>
+            </div>
+          </article>
+          <article class="group rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+            <div class="h-40 bg-gradient-to-br from-indigo-400/30 via-amber-300/25 to-rose-400/25"></div>
+            <div class="p-4 space-y-2">
+              <div class="flex items-center justify-between text-sm text-slate-400">
+                <span>2023 • Brand</span><span>Design</span>
+              </div>
+              <h3 class="text-xl font-semibold">Northbound</h3>
+              <p class="text-slate-300 text-sm">Visual identity and site refresh for outdoor brand.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="grid md:grid-cols-[0.6fr_0.4fr] gap-8 items-start" id="about">
+        <div class="space-y-4">
+          <h2 class="text-2xl font-semibold">About</h2>
+          <p class="text-slate-300 leading-relaxed">
+            I partner with founders and product teams to ship interfaces that feel effortless. This starter keeps things lean—swap colors in the Tailwind config above and drop in your own case studies.
+          </p>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+              <div class="text-3xl font-semibold">40+</div>
+              <div class="text-slate-300">Projects shipped</div>
+            </div>
+            <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+              <div class="text-3xl font-semibold">12</div>
+              <div class="text-slate-300">Industries</div>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-3 rounded-2xl border border-white/10 bg-white/5 p-5">
+          <div class="text-sm text-slate-300">Tooling</div>
+          <ul class="space-y-2 text-sm text-slate-100">
+            <li>— Figma / Penpot</li>
+            <li>— Tailwind / React</li>
+            <li>— Framer / Lottie</li>
+            <li>— Notion / Linear</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="border border-white/10 rounded-2xl bg-white/5 p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4" id="contact">
+        <div class="space-y-1">
+          <h2 class="text-2xl font-semibold">Let’s make something.</h2>
+          <p class="text-slate-300">Drop a line—this form is static and ready for your backend.</p>
+        </div>
+        <form class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto" id="contactForm">
+          <input class="px-4 py-3 rounded-lg bg-white/10 border border-white/10 placeholder:text-slate-400 focus:outline-none focus:border-amber-300 w-full sm:w-64" type="email" required placeholder="you@example.com" />
+          <button class="px-5 py-3 rounded-lg bg-amber-400 text-ink font-semibold hover:bg-amber-300" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+

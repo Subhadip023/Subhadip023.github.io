@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adminer Lite — Dashboard</title>
+    <meta name="description" content="Adminer-inspired dashboard with tables, queries, and activity." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { brand: { 400: '#7c8fff', 500: '#5164ff' }, ink: '#0b1221' }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-50">
+    <div class="min-h-screen grid lg:grid-cols-[260px_1fr]">
+      <aside class="border-r border-white/5 bg-white/5 flex flex-col">
+        <div class="p-4 flex items-center gap-2 text-lg font-semibold">
+          <div class="h-9 w-9 rounded-xl bg-brand-500 flex items-center justify-center text-white">A</div>
+          <div>
+            <div>Adminer Lite</div>
+            <p class="text-xs text-slate-300">demo</p>
+          </div>
+        </div>
+        <nav class="px-3 space-y-2 text-sm">
+          <a class="block px-3 py-2 rounded-lg bg-white/10" href="./dashboard.html">Dashboard</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="./tables.html">Tables</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="./query.html">SQL Console</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="./login.html">Logout</a>
+        </nav>
+        <div class="mt-auto p-4 text-xs text-slate-300">Connected: localhost:5432 / demo</div>
+      </aside>
+
+      <main class="p-5 lg:p-8 space-y-6">
+        <header class="flex flex-wrap items-center gap-4 justify-between">
+          <div>
+            <p class="text-sm text-slate-300">Overview</p>
+            <h1 class="text-2xl font-semibold">Database health</h1>
+          </div>
+          <div class="flex items-center gap-3">
+            <button id="themeBtn" class="px-4 py-2 rounded-lg border border-white/10 hover:border-white/30">Theme</button>
+            <a class="px-4 py-2 rounded-lg bg-brand-500 hover:bg-brand-400 text-white font-semibold" href="./query.html">Open console</a>
+          </div>
+        </header>
+
+        <section class="grid sm:grid-cols-2 xl:grid-cols-4 gap-4">
+          <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+            <p class="text-sm text-slate-300">Tables</p>
+            <div class="text-3xl font-semibold">24</div>
+            <p class="text-xs text-emerald-300 mt-1">+2 new</p>
+          </div>
+          <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+            <p class="text-sm text-slate-300">Rows</p>
+            <div class="text-3xl font-semibold">1.2M</div>
+            <p class="text-xs text-amber-300 mt-1">Index check due</p>
+          </div>
+          <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+            <p class="text-sm text-slate-300">Backups</p>
+            <div class="text-3xl font-semibold">03:00</div>
+            <p class="text-xs text-slate-300 mt-1">Last nightly</p>
+          </div>
+          <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+            <p class="text-sm text-slate-300">Connections</p>
+            <div class="text-3xl font-semibold" id="connCount">48</div>
+            <p class="text-xs text-emerald-300 mt-1">Live</p>
+          </div>
+        </section>
+
+        <section class="grid lg:grid-cols-[1.1fr_0.9fr] gap-4">
+          <div class="rounded-xl border border-white/10 bg-white/5 p-5 space-y-4">
+            <div class="flex items-center justify-between">
+              <h2 class="text-lg font-semibold">Query performance</h2>
+              <span class="text-xs text-slate-300">Last hour</span>
+            </div>
+            <div class="h-48 rounded-lg bg-gradient-to-br from-brand-500/20 via-emerald-400/10 to-cyan-400/15"></div>
+            <ul class="text-sm text-slate-200 space-y-1">
+              <li>— P95 latency 82ms (API reads).</li>
+              <li>— Two slow writes flagged on sessions table.</li>
+            </ul>
+          </div>
+          <div class="rounded-xl border border-white/10 bg-white/5 p-5 space-y-4">
+            <div class="flex items-center justify-between">
+              <h2 class="text-lg font-semibold">Recent activity</h2>
+              <span class="text-xs text-slate-300">Live</span>
+            </div>
+            <div id="activity" class="space-y-3 text-sm text-slate-100">
+              <div class="flex items-center justify-between bg-white/5 px-3 py-2 rounded-lg"><span>SELECT * FROM users LIMIT 50</span><span class="text-slate-400">10:04</span></div>
+              <div class="flex items-center justify-between bg-white/5 px-3 py-2 rounded-lg"><span>VACUUM ANALYZE orders</span><span class="text-slate-400">09:58</span></div>
+              <div class="flex items-center justify-between bg-white/5 px-3 py-2 rounded-lg"><span>CREATE INDEX idx_logs_ts</span><span class="text-slate-400">09:42</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="rounded-xl border border-white/10 bg-white/5 p-5 space-y-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-lg font-semibold">Connections</h2>
+            <button class="text-sm px-3 py-2 rounded-lg border border-white/10 hover:border-white/30" id="refreshConn" type="button">Refresh</button>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead class="text-slate-300">
+                <tr class="text-left">
+                  <th class="py-2">PID</th>
+                  <th class="py-2">User</th>
+                  <th class="py-2">DB</th>
+                  <th class="py-2">State</th>
+                  <th class="py-2">Query</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/5" id="connTable">
+                <tr><td class="py-2">4212</td><td>api</td><td>demo</td><td><span class="px-2 py-1 rounded-full bg-emerald-500/20 text-emerald-200 text-xs">active</span></td><td>SELECT ...</td></tr>
+                <tr><td class="py-2">4213</td><td>worker</td><td>demo</td><td><span class="px-2 py-1 rounded-full bg-amber-500/20 text-amber-200 text-xs">idle</span></td><td>LISTEN channel</td></tr>
+                <tr><td class="py-2">4214</td><td>admin</td><td>demo</td><td><span class="px-2 py-1 rounded-full bg-emerald-500/20 text-emerald-200 text-xs">active</span></td><td>VACUUM</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+

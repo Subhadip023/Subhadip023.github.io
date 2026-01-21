@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adminer Lite — Tables</title>
+    <meta name="description" content="Browse and inspect tables in Adminer Lite." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: { extend: { colors: { brand: { 500: '#5164ff', 400: '#7c8fff' } } } }
+      };
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-50">
+    <div class="min-h-screen grid lg:grid-cols-[260px_1fr]">
+      <aside class="border-r border-white/5 bg-white/5 flex flex-col">
+        <div class="p-4 flex items-center gap-2 text-lg font-semibold">
+          <div class="h-9 w-9 rounded-xl bg-brand-500 flex items-center justify-center text-white">A</div>
+          <div>
+            <div>Adminer Lite</div>
+            <p class="text-xs text-slate-300">demo</p>
+          </div>
+        </div>
+        <nav class="px-3 space-y-2 text-sm">
+          <a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="./dashboard.html">Dashboard</a>
+          <a class="block px-3 py-2 rounded-lg bg-white/10" href="./tables.html">Tables</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="./query.html">SQL Console</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-white/5" href="./login.html">Logout</a>
+        </nav>
+        <div class="mt-auto p-4 text-xs text-slate-300">Tables in demo (24)</div>
+      </aside>
+
+      <main class="p-5 lg:p-8 space-y-6">
+        <header class="flex flex-wrap items-center gap-4 justify-between">
+          <div>
+            <p class="text-sm text-slate-300">Schema</p>
+            <h1 class="text-2xl font-semibold">Tables</h1>
+          </div>
+          <div class="flex items-center gap-3">
+            <button id="themeBtn" class="px-4 py-2 rounded-lg border border-white/10 hover:border-white/30">Theme</button>
+            <a class="px-4 py-2 rounded-lg bg-brand-500 hover:bg-brand-400 text-white font-semibold" href="./query.html">Run query</a>
+          </div>
+        </header>
+
+        <section class="rounded-xl border border-white/10 bg-white/5 p-5 space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <input class="rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm text-white placeholder:text-slate-400 focus:border-brand-400 focus:outline-none" type="search" placeholder="Search table" />
+              <select class="rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm text-white focus:border-brand-400 focus:outline-none">
+                <option>All schemas</option>
+                <option>public</option>
+                <option>auth</option>
+              </select>
+            </div>
+            <span class="text-sm text-slate-300">24 tables</span>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead class="text-slate-300">
+                <tr class="text-left">
+                  <th class="py-2">Table</th>
+                  <th class="py-2">Rows</th>
+                  <th class="py-2">Size</th>
+                  <th class="py-2">Indexes</th>
+                  <th class="py-2">Action</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/5">
+                <tr><td class="py-2">users</td><td>42k</td><td>18 MB</td><td>3</td><td class="space-x-2"><a class="text-brand-200 hover:text-brand-100" href="./table-detail.html">Browse</a><a class="text-slate-200 hover:text-white" href="./query.html">Query</a></td></tr>
+                <tr><td class="py-2">orders</td><td>210k</td><td>92 MB</td><td>5</td><td class="space-x-2"><a class="text-brand-200 hover:text-brand-100" href="./table-detail.html">Browse</a><a class="text-slate-200 hover:text-white" href="./query.html">Query</a></td></tr>
+                <tr><td class="py-2">logs</td><td>820k</td><td>310 MB</td><td>2</td><td class="space-x-2"><a class="text-brand-200 hover:text-brand-100" href="./table-detail.html">Browse</a><a class="text-slate-200 hover:text-white" href="./query.html">Query</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
