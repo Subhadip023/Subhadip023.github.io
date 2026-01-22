@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News - Sohoj News</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="container">
+            <div class="top-nav-left">
+                <span><i class="fas fa-bolt"></i> Live TV</span>
+                <span><i class="far fa-newspaper"></i> ePaper</span>
+                <span><i class="fas fa-bell"></i> Daily Newsletter</span>
+            </div>
+            <div class="top-nav-right">
+                <span><i class="fas fa-sign-in-alt"></i> Sign In</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <span class="red">Sohoj</span> <span class="blue">News</span>
+                </a>
+            </div>
+            <div class="date-time">
+                <span id="date"></span>
+                <span id="time"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="active"><a href="latest_news.html">Latest News</a></li>
+                <li><a href="#">India</a></li>
+                <li><a href="#">World</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">More <i class="fas fa-chevron-down"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Latest News</h1>
+            <div class="breadcrumbs">
+                <a href="../index.html">Home</a> &raquo; <span>Latest News</span>
+            </div>
+        </div>
+
+        <div class="latest-news-container">
+            <!-- Main Featured Article -->
+            <article class="featured-article">
+                <div class="featured-image">
+                    <img src="https://picsum.photos/1200/600?random=101" alt="Featured News">
+                    <span class="category-tag red-bg">Top Story</span>
+                </div>
+                <div class="article-content">
+                    <h2>Breaking: Major Development in Today's Headline Story</h2>
+                    <div class="meta">
+                        <span><i class="far fa-user"></i> By John Doe</span>
+                        <span><i class="far fa-clock"></i> 2 hours ago</span>
+                        <span><i class="far fa-comment"></i> 24 Comments</span>
+                    </div>
+                    <p class="excerpt">
+                        In a significant turn of events, the latest developments have shaken the political landscape. 
+                        Experts weigh in on what this means for the future of the region and its impact on global markets.
+                    </p>
+                    <a href="./article.html" class="read-more">Read Full Story <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Latest News Grid -->
+            <div class="news-grid">
+                <!-- News Card 1 -->
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://picsum.photos/400/225?random=201" alt="News 1">
+                        <span class="category-tag blue-bg">Politics</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Government Announces New Economic Policy Reforms</h3>
+                        <div class="meta">
+                            <span><i class="far fa-clock"></i> 3 hours ago</span>
+                            <span><i class="far fa-eye"></i> 1.2k Views</span>
+                        </div>
+                        <p>The new reforms aim to boost the economy and create more job opportunities in the coming fiscal year.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <!-- News Card 2 -->
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://picsum.photos/400/225?random=202" alt="News 2">
+                        <span class="category-tag red-bg">Sports</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>National Team Secures Spot in Championship Finals</h3>
+                        <div class="meta">
+                            <span><i class="far fa-clock"></i> 5 hours ago</span>
+                            <span><i class="far fa-eye"></i> 3.4k Views</span>
+                        </div>
+                        <p>In a thrilling match that went into overtime, our national team secured their place in the finals.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <!-- News Card 3 -->
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://picsum.photos/400/225?random=203" alt="News 3">
+                        <span class="category-tag blue-bg">Technology</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>New Smartphone Breaks Sales Records Worldwide</h3>
+                        <div class="meta">
+                            <span><i class="far fa-clock"></i> 8 hours ago</span>
+                            <span><i class="far fa-eye"></i> 2.1k Views</span>
+                        </div>
+                        <p>The latest flagship device has surpassed all expectations with its innovative features and design.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <!-- News Card 4 -->
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://picsum.photos/400/225?random=204" alt="News 4">
+                        <span class="category-tag red-bg">Health</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Breakthrough in Medical Research Shows Promise</h3>
+                        <div class="meta">
+                            <span><i class="far fa-clock"></i> 10 hours ago</span>
+                            <span><i class="far fa-eye"></i> 1.8k Views</span>
+                        </div>
+                        <p>Scientists have made significant progress in developing a new treatment for chronic conditions.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <!-- News Card 5 -->
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://picsum.photos/400/225?random=205" alt="News 5">
+                        <span class="category-tag blue-bg">Business</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Stock Market Reaches All-Time High</h3>
+                        <div class="meta">
+                            <span><i class="far fa-clock"></i> 12 hours ago</span>
+                            <span><i class="far fa-eye"></i> 2.5k Views</span>
+                        </div>
+                        <p>Investors celebrate as the market surges to record levels despite global economic concerns.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <!-- News Card 6 -->
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://picsum.photos/400/225?random=206" alt="News 6">
+                        <span class="category-tag red-bg">Entertainment</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Award-Winning Film Director Announces New Project</h3>
+                        <div class="meta">
+                            <span><i class="far fa-clock"></i> 15 hours ago</span>
+                            <span><i class="far fa-eye"></i> 3.1k Views</span>
+                        </div>
+                        <p>The acclaimed director returns with an ambitious new film featuring an all-star cast.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#" class="next">Next <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Popular Posts -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">Popular Posts</h3>
+                <div class="popular-posts">
+                    <div class="post-item">
+                        <div class="post-image">
+                            <img src="https://picsum.photos/80/60?random=301" alt="Popular Post 1">
+                        </div>
+                        <div class="post-content">
+                            <h4><a href="#">Top 10 Travel Destinations for 2024</a></h4>
+                            <span class="post-date">Jan 15, 2024</span>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <div class="post-image">
+                            <img src="https://picsum.photos/80/60?random=302" alt="Popular Post 2">
+                        </div>
+                        <div class="post-content">
+                            <h4><a href="#">New Study Reveals Benefits of Mediterranean Diet</a></h4>
+                            <span class="post-date">Jan 14, 2024</span>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <div class="post-image">
+                            <img src="https://picsum.photos/80/60?random=303" alt="Popular Post 3">
+                        </div>
+                        <div class="post-content">
+                            <h4><a href="#">Tech Giant Unveils Revolutionary New Product</a></h4>
+                            <span class="post-date">Jan 13, 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">Categories</h3>
+                <ul class="categories-list">
+                    <li><a href="#">Politics <span>24</span></a></li>
+                    <li><a href="#">Business <span>18</span></a></li>
+                    <li><a href="#">Technology <span>32</span></a></li>
+                    <li><a href="#">Sports <span>15</span></a></li>
+                    <li><a href="#">Entertainment <span>27</span></a></li>
+                    <li><a href="#">Health <span>12</span></a></li>
+                    <li><a href="#">Science <span>9</span></a></li>
+                </ul>
+            </div>
+
+            <!-- Tags -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">Tags</h3>
+                <div class="tags">
+                    <a href="#">#Breaking</a>
+                    <a href="#">#Latest</a>
+                    <a href="#">#Exclusive</a>
+                    <a href="#">#Trending</a>
+                    <a href="#">#Interview</a>
+                    <a href="#">#Analysis</a>
+                    <a href="#">#Opinion</a>
+                    <a href="#">#Report</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Sohoj News brings you the latest and most accurate news from around the world. We are committed to delivering unbiased and factual reporting.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="latest_news.html">Latest News</a></li>
+                        <li><a href="#">Popular</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>News Categories</h4>
+                    <ul>
+                        <li><a href="#">Politics</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter to receive the latest news and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sohoj News. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Paper - Latest Headlines</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="container">
+            <div class="top-nav-left">
+                <span><i class="fas fa-bolt"></i> Live TV</span>
+                <span><i class="far fa-newspaper"></i> ePaper</span>
+                <span onclick="showPopup();"><i class="fas fa-bell"></i> Daily Newsletter</span>
+            </div>
+            <div class="top-nav-right">
+                <span><i class="fas fa-sign-in-alt"></i> Sign In</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <span class="red">Sohoj </span> <span class="blue">News</span>
+            </div>
+            <div class="date-time">
+                <span id="date"></span>
+                <span id="time"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li class="active"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="./public/latest_news.html">Latest News</a></li>
+                <li><a href="#">India</a></li>
+                <li><a href="#">World</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">More <i class="fas fa-chevron-down"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Breaking News Ticker -->
+        <div class="breaking-news">
+            <span class="breaking-label">Breaking:</span>
+            <div class="ticker">
+                <ul>
+                    <li>Breaking News 1: This is a sample breaking news headline</li>
+                    <li>Breaking News 2: Another important update for our readers</li>
+                    <li>Breaking News 3: Stay tuned for more updates</li>
+                    <li>Breaking News 4: Latest developments in the news</li>
+                    <li>Breaking News 5: More breaking news to come</li>
+                    <li>Breaking News 6: Stay informed with us</li>
+                    <li>Breaking News 7: Breaking news continues</li>
+                    <li>Breaking News 8: Stay updated with us</li>
+                    <li>Breaking News 9: Breaking news continues</li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Headline -->
+        <section class="main-headline">
+            <div class="headline-content">
+                <span class="category red-bg">TOP STORY</span>
+                <h1>This is the main headline of the day's most important news story</h1>
+                <p class="summary">A brief summary of the main story that will capture the reader's attention and provide context about the most important news of the day.</p>
+                <p class="meta">By Author Name | 2 hours ago | <a href="./public/article.html" class="red">Read More</a></p>
+            </div>
+            <div class="headline-image">
+                <img src="https://picsum.photos/800/450?random=1" alt="Main News">
+            </div>
+        </section>
+
+        <!-- News Grid -->
+        <section class="news-grid">
+            <a href="./public/article.html" class="news-card">
+                <div class="news-image">
+                    <img src="https://picsum.photos/400/225?random=2" alt="News 1">
+                    <span class="category-tag blue-bg">Politics</span>
+                </div>
+                <h3>Political leaders meet to discuss new policies</h3>
+                <p class="meta">2 hours ago</p>
+            </a>
+            <a href="./public/article.html" class="news-card">
+                <div class="news-image">
+                    <img src="https://picsum.photos/400/225?random=3" alt="News 2">
+                    <span class="category-tag red-bg">Sports</span>
+                </div>
+                <h3>National team wins championship in thrilling match</h3>
+                <p class="meta">5 hours ago</p>
+            </a>
+            <a href="./public/article.html" class="news-card">
+                <div class="news-image">
+                    <img src="https://picsum.photos/400/225?random=4" alt="News 3">
+                    <span class="category-tag blue-bg">Technology</span>
+                </div>
+                <h3>New smartphone breaks sales records</h3>
+                <p class="meta">8 hours ago</p>
+            </a>
+        </section>
+
+        <!-- More News Section -->
+        <section class="more-news">
+            <div class="section-header">
+                <h2>Latest Updates</h2>
+                <a href="./public/latest_news.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="news-list">
+                <div class="news-item">
+                    <div class="news-item-content">
+                        <h4>Stock market reaches all-time high despite global concerns</h4>
+                        <p class="meta">10:30 AM | Business</p>
+                    </div>
+                    <img src="https://picsum.photos/120/80?random=5" alt="News Thumbnail">
+                </div>
+                <div class="news-item">
+                    <div class="news-item-content">
+                        <h4>New education policy to be implemented next academic year</h4>
+                        <p class="meta">9:15 AM | Education</p>
+                    </div>
+                    <img src="https://picsum.photos/120/80?random=5" alt="News Thumbnail">
+                </div>
+                <div class="news-item">
+                    <div class="news-item-content">
+                        <h4>Health ministry issues new COVID-19 guidelines</h4>
+                        <p class="meta">Yesterday</p>
+                    </div>
+                    <img src="https://picsum.photos/120/80?random=5" alt="News Thumbnail">
+                </div>
+
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-section">
+                    <h4>Trending Topics</h4>
+                    <ul>
+                        <li><a href="#">Election 2024</a></li>
+                        <li><a href="#">Stock Market</a></li>
+                        <li><a href="#">IPL 2024</a></li>
+                        <li><a href="#">Coronavirus</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">ePaper</a></li>
+                        <li><a href="#">Subscribe</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 News Paper. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div class="loader-overlay">
+        <div class="loader">
+            <div class="loader-logo">
+                <span class="n">S</span>
+                <span class="p">N</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Subscription Popup -->
+    <div class="popup-overlay" id="subscriptionPopup">
+        <div class="popup-content">
+            <button class="close-popup">&times;</button>
+            <div class="popup-body">
+                <h3><i class="fas fa-envelope-open-text"></i> Subscribe to Our Newsletter</h3>
+                <p>Get the latest news and updates delivered to your inbox daily.</p>
+                <form id="subscriptionForm" class="subscription-form">
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </div>
+                    <div class="form-footer">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="terms" required>
+                            <span class="checkmark"></span>
+                            I agree to the <a href="#" class="terms-link">Terms & Conditions</a>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
